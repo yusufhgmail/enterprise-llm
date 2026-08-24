@@ -39,7 +39,7 @@ export default function SwedishHome() {
           <span className="brand-mark" aria-hidden="true">F</span><span>First Party Works</span>
         </a>
         <nav aria-label="Huvudmeny">
-          <a href="#work">Vad vi bygger</a><a href="#approach">Så fungerar det</a><a href="#why">Varför äga</a>
+          <a href="#work">Vad vi bygger</a><a href="#approach">Så fungerar det</a><a href="#privacy">Integritet</a>
           <a href="/en" className="language-link" aria-label="Switch to English">EN</a>
           <a href="#contact" className="nav-cta">Diskutera ett system</a>
         </nav>
@@ -99,6 +99,20 @@ export default function SwedishHome() {
           <h3>Ni behåller kontrollen över:</h3><ul>{controls.map((control) => <li key={control}>{control}</li>)}</ul>
           <p className="control-note">Kör i ert moln, en privat miljö eller en annan lösning vald för arbetet. Åtkomst, lagringstid och spårbarhet bestäms uttryckligen—de antas inte.</p>
         </aside>
+      </section>
+
+      <section className="section privacy-section" id="privacy">
+        <div className="privacy-heading">
+          <p className="eyebrow">Inbyggd integritet</p>
+          <h2>Integritet måste sitta i arkitekturen—inte läggas till som ett löfte i efterhand.</h2>
+          <p>Innan någon företagsdata kopplas in bestämmer vi gränsen: vad systemet får använda, vilka leverantörer som får behandla informationen, var den får köras och hur varje känslig åtgärd kontrolleras.</p>
+        </div>
+        <div className="privacy-controls">
+          <article><span>01</span><div><h3>Välj var det körs</h3><p>Ert moln, en privat miljö eller en annan godkänd lösning—vald efter arbetets faktiska behov av säkerhet och prestanda.</p></div></article>
+          <article><span>02</span><div><h3>Begränsa vad som lämnar</h3><p>Leverantörer, lagringstid, cache och regiongränser dokumenteras. Träning på företagsdata sker bara när den är avsiktligt utformad och godkänd.</p></div></article>
+          <article><span>03</span><div><h3>Styr vem som får agera</h3><p>Människor och system får bara den åtkomst de behöver. Åtgärder med stor konsekvens kan kräva godkännande av en namngiven person.</p></div></article>
+          <article><span>04</span><div><h3>Behåll ett granskningsspår</h3><p>Underlag, svar, beslut och korrigeringar kan sparas så att företaget kan se vad som hände och förbättra systemet på ett säkert sätt.</p></div></article>
+        </div>
       </section>
 
       <section className="section ownership-section" id="why">

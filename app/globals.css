@@ -98,6 +98,16 @@ a { color: inherit; text-decoration: none; }
 .control-card li::before { color: var(--signal); content: '✓'; left: 0; position: absolute; }
 .control-note { border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.56); font-size: 11px; line-height: 1.6; margin: 24px 0 0; padding-top: 22px; }
 
+.privacy-section { background: var(--white); display: grid; gap: clamp(60px, 9vw, 150px); grid-template-columns: .82fr 1.18fr; }
+.privacy-heading { position: sticky; top: 130px; align-self: start; }
+.privacy-heading h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(42px, 4.8vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1; margin: 0; }
+.privacy-heading > p:last-child { color: var(--muted); font-size: 15px; line-height: 1.65; margin: 27px 0 0; max-width: 620px; }
+.privacy-controls { border-top: 1px solid var(--ink); }
+.privacy-controls article { border-bottom: 1px solid var(--line); display: grid; gap: 28px; grid-template-columns: 45px 1fr; padding: 31px 0; }
+.privacy-controls article > span { color: var(--blue); font-family: var(--font-geist-mono), monospace; font-size: 10px; padding-top: 5px; }
+.privacy-controls h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 28px; font-weight: 400; letter-spacing: -.03em; margin: 0; }
+.privacy-controls p { color: var(--muted); font-size: 13px; line-height: 1.62; margin: 10px 0 0; max-width: 620px; }
+
 .ownership-section { background: var(--ink); color: var(--white); }
 .ownership-section .section-heading > p:last-child { color: rgba(255,255,255,.62); }
 .ownership-grid { border: 1px solid rgba(255,255,255,.2); display: grid; grid-template-columns: 1fr 1fr; margin-top: 70px; }
@@ -171,7 +181,8 @@ footer > span { color: rgba(255,255,255,.5); justify-self: end; }
   .system-map { min-height: 650px; }
   .split-section { grid-template-columns: 1fr; }
   .control-card { width: 100%; }
-  .first-system-section, .founder-section, .faq-section { grid-template-columns: 1fr; }
+  .privacy-section, .first-system-section, .founder-section, .faq-section { grid-template-columns: 1fr; }
+  .privacy-heading { position: static; }
   .contact-section { align-items: start; grid-template-columns: 1fr; }
 }
 

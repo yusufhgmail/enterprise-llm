@@ -1,0 +1,141 @@
+import LeadForm from '../components/LeadForm';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'First Party Works — Bygg intelligensen dina konkurrenter inte kan hyra',
+  description: 'Företagsägda AI-system som lär av er kunskap, följer era regler och körs där ni väljer.',
+};
+
+const systems = [
+  {
+    number: '01',
+    title: 'Försäljning som minns',
+    text: 'Gör år av samtal, offerter och CRM-historik till ett system som hjälper teamet att förbereda, följa upp och offerera på ert sätt.',
+  },
+  {
+    number: '02',
+    title: 'Service som kan jobbet',
+    text: 'Ge supportteamet svar förankrade i era produkter, regler och lösta ärenden—med tydliga källor och överlämning till en människa.',
+  },
+  {
+    number: '03',
+    title: 'Drift som blir bättre',
+    text: 'Fånga omdömet bakom återkommande beslut, koppla ihop verktygen ni redan använder och lär av varje godkänt resultat.',
+  },
+];
+
+const controls = [
+  'Er data och era affärsregler',
+  'Era arbetsflöden, tester och skyddsräcken',
+  'Er modell eller era modellanpassningar där de behövs',
+  'En tydlig väg att byta leverantör eller köra privat',
+];
+
+export default function SwedishHome() {
+  return (
+    <main lang="sv">
+      <header className="site-header">
+        <a className="brand" href="#top" aria-label="First Party Works startsida">
+          <span className="brand-mark" aria-hidden="true">F</span><span>First Party Works</span>
+        </a>
+        <nav aria-label="Huvudmeny">
+          <a href="#work">Vad vi bygger</a><a href="#approach">Så fungerar det</a><a href="#why">Varför äga</a>
+          <a href="/en" className="language-link" aria-label="Switch to English">EN</a>
+          <a href="#contact" className="nav-cta">Diskutera ett system</a>
+        </nav>
+      </header>
+
+      <section className="hero" id="top">
+        <div className="hero-copy">
+          <p className="eyebrow">Företagsägda AI-system</p>
+          <h1>Bygg intelligensen dina konkurrenter inte kan hyra.</h1>
+          <p className="hero-lede">Vi bygger och driver AI-system kring kunskapen, besluten och arbetsflödena som gör ert företag annorlunda. De följer era regler, blir bättre av er återkoppling och körs där ni väljer.</p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#contact">Diskutera ert första system <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="#approach">Se hur det fungerar <span aria-hidden="true">↓</span></a>
+          </div>
+          <div className="trust-line" aria-label="Våra principer">
+            <span>Fungerar med era nuvarande verktyg</span><span>En väg ut ur leverantörslåsning</span><span>Mänskligt godkännande där det behövs</span>
+          </div>
+        </div>
+
+        <div className="system-map" aria-label="Ett företagsägt AI-system kopplar företagets kunskap till egen intelligens och fungerande arbetsflöden">
+          <div className="map-label">Er fördel, inbyggd</div>
+          <div className="map-row map-row-data"><span className="map-index">INPUT</span><strong>Företagets kunskap</strong><small>CRM · dokument · beslut</small></div>
+          <div className="map-connector"><span>strukturera + skydda</span></div>
+          <div className="map-row map-row-core"><span className="map-index">KÄRNA</span><strong>Egen intelligens</strong><small>modeller · regler · tester</small></div>
+          <div className="map-connector"><span>driftsätt + förbättra</span></div>
+          <div className="map-row map-row-output"><span className="map-index">RESULTAT</span><strong>Fungerande system</strong><small>försäljning · service · drift</small></div>
+          <div className="learning-loop"><span className="pulse" aria-hidden="true" /><span>Varje godkänt resultat gör systemet mer användbart.</span></div>
+        </div>
+      </section>
+
+      <section className="thesis-band" aria-label="Vår utgångspunkt">
+        <p>De bästa modellerna blir billigare och mer tillgängliga.</p>
+        <strong>Er fördel kommer från vad de lär sig om ert företag—och systemet ni bygger runt dem.</strong>
+      </section>
+
+      <section className="section work-section" id="work">
+        <div className="section-heading">
+          <p className="eyebrow">Vad vi bygger</p><h2>Ett värdefullt arbetsflöde först. En företagsförmåga över tid.</h2>
+          <p>Vi börjar där kunskap är utspridd, omdöme spelar roll och ett bättre beslut påverkar intäkter, kostnader eller risk.</p>
+        </div>
+        <div className="system-cards">{systems.map((system) => <article className="system-card" key={system.number}><span>{system.number}</span><h3>{system.title}</h3><p>{system.text}</p></article>)}</div>
+        <div className="stack-line"><span>Byggt kring verktygen som redan finns i verksamheten</span><strong>HubSpot</strong><strong>Salesforce</strong><strong>Pipedrive</strong><strong>Microsoft 365</strong><strong>Era egna system</strong></div>
+      </section>
+
+      <section className="section split-section" id="approach">
+        <div className="split-copy">
+          <p className="eyebrow">Så fungerar det</p><h2>Använd den bästa tillgängliga modellen. Äg det som får den att fungera för er.</h2>
+          <p>Att äga sin intelligens betyder inte att träna en jättemodell från grunden. Det betyder att behålla kontrollen över företagets kunskap, regler, arbetsflöde och lärande som gör modellen värdefull.</p>
+          <ol className="steps">
+            <li><span>01</span><div><strong>Välj beslutet</strong><p>Hitta ett arbetsflöde med ett synligt affärsresultat.</p></div></li>
+            <li><span>02</span><div><strong>Bygg systemet</strong><p>Koppla ihop rätt data, modell, kontroller och mänskliga godkännanden.</p></div></li>
+            <li><span>03</span><div><strong>Bevisa och förbättra</strong><p>Mät riktigt arbete, lär av korrigeringar och bygg vidare först när systemet har förtjänat förtroendet.</p></div></li>
+          </ol>
+        </div>
+        <aside className="control-card">
+          <div className="control-card-top"><span>KONTROLLAGER</span><span className="status-dot">I drift</span></div>
+          <h3>Ni behåller kontrollen över:</h3><ul>{controls.map((control) => <li key={control}>{control}</li>)}</ul>
+          <p className="control-note">Kör i ert moln, en privat miljö eller en annan lösning vald för arbetet. Åtkomst, lagringstid och spårbarhet bestäms uttryckligen—de antas inte.</p>
+        </aside>
+      </section>
+
+      <section className="section ownership-section" id="why">
+        <div className="section-heading"><p className="eyebrow">Varför äga företagslagret</p><h2>Hyr den bästa allmänna intelligensen. Äg delen som gör den till er.</h2><p>De bästa generella modellerna är användbara och kommer fortsätta förändras. Er långsiktiga tillgång är företagskontexten, arbetsflödet och återkopplingen som kan flytta mellan dem.</p></div>
+        <div className="ownership-grid">
+          <article><span>Bara tillgång</span><h3>En kapabel modell som alla kan använda</h3><ul><li>Allmän kunskap</li><li>Generellt beteende</li><li>Företagsanpassningen kan bli fast i verktyget</li></ul></article>
+          <article className="owned-column"><span>Företagsförmåga</span><h3>Ett system som blir bättre på ert arbete</h3><ul><li>Er verksamhetskunskap</li><li>Era beslut och skyddsräcken</li><li>Exempel, korrigeringar och tester som företaget behåller</li></ul></article>
+        </div>
+      </section>
+
+      <section className="first-system-section">
+        <div><p className="eyebrow">Det första uppdraget</p><h2>Bevisa ett användbart system innan ni åtar er en transformation.</h2></div>
+        <ol><li><span>Vecka 1</span><strong>Kartlägg arbetet och affärsresultatet</strong></li><li><span>Vecka 2–3</span><strong>Bygg med en liten, kontrollerad mängd riktig företagsdata</strong></li><li><span>Vecka 4</span><strong>Låt människorna som gör jobbet testa och avgör vad som har förtjänat rätten att fortsätta</strong></li></ol>
+      </section>
+
+      <section className="section founder-section">
+        <div className="founder-kicker">Byggt från operatörens sida</div>
+        <blockquote>“Företag behöver inte ännu en imponerande demo. De behöver ett system som passar arbetet, förtjänar förtroende och lämnar dem starkare efter varje användning.”</blockquote>
+        <div className="founder-note"><strong>Yusuf Young</strong><p>Grundare av <a href="https://www.funnelbud.com/om-oss/" target="_blank" rel="noreferrer">FunnelBud</a>, ett svenskt CRM-företag som har hjälpt hundratals kunder. Han startade det efter att ha implementerat HubSpot- och Salesforce-system och sett hur mycket värde som försvann mellan kraftfull mjukvara och verkligt arbete.</p></div>
+      </section>
+
+      <section className="section faq-section">
+        <div className="section-heading"><p className="eyebrow">Raka svar</p><h2>Frågorna värda att ställa innan ni bygger.</h2></div>
+        <div className="faq-list">
+          <details open><summary>Varför inte bara använda ChatGPT, Copilot eller ett annat färdigt verktyg?</summary><p>Använd de starkaste generella verktygen där de löser problemet. Vi bygger företagslagret som de inte ger er automatiskt: rätt intern kontext, arbetsflöde, behörigheter, kontroller, återkoppling och en väg att byta modell.</p></details>
+          <details><summary>Måste vi träna en jättemodell från grunden?</summary><p>Nej. De flesta nyttiga system börjar med en befintlig modell. Beroende på arbetet kan ägandet ligga i er datakedja, kunskapshämtning, regler, tester och arbetsflöde—eller i en mindre modell som tränats för en specifik uppgift.</p></details>
+          <details><summary>Ersätter ni vårt CRM eller andra kärnsystem?</summary><p>Vanligtvis inte. Vi kopplar till system som HubSpot, Salesforce eller Pipedrive och gör kunskapen i dem mer användbar. Ett byte är ett separat beslut, inte ett dolt krav.</p></details>
+          <details><summary>Vart tar vår data vägen?</summary><p>Det bestäms innan bygget. Vi kan arbeta i ert moln, en privat miljö eller en annan godkänd lösning. Åtkomst, lagringstid, modellleverantörer, regionkrav och spårbarhet görs tydliga för det aktuella systemet.</p></details>
+        </div>
+      </section>
+
+      <section className="contact-section" id="contact">
+        <div><p className="eyebrow">Börja med ett system</p><h2>Vad borde ert företag kunna göra bättre?</h2><p>Berätta var arbetet går långsamt, blir ojämnt eller sitter fast i några få personers huvuden. Vi svarar med det första systemet vi skulle testa och vad det behöver bevisa.</p></div>
+        <LeadForm language="sv" />
+      </section>
+
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">F</span><span>First Party Works</span></a><p>Företagsägda modeller och AI-system.</p><span><a href="/en">English</a> · <a href="/se">Svenska</a></span></footer>
+    </main>
+  );
+}

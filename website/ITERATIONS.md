@@ -20,6 +20,10 @@ The most material lead blocker was uncertainty about the first engagement. The r
 
 The most material remaining blocker is legal identity. Before public launch, the privacy notice and footer must name the company that operates First Party Works and the address or contact route for privacy requests.
 
-## Round 3 — no further copy change is more valuable than real market evidence
+## Round 3 — privacy needed to stand on its own
 
-The page now answers what is built, why a ready-made assistant is not the whole answer, whether the CRM stays, what the company owns, how the first engagement works, where data may run and why the founder understands this market. It gives both English and Swedish visitors a direct lead path. The brand and domain remain a real downstream choice, so they require owner confirmation before purchase. Beyond the legal notice and final domain, further polishing would be lower value than showing the page to qualified buyers and learning which workflow they would actually pay to improve.
+The page answered privacy questions in the control card and FAQ, but a buyer scanning for security could miss them. The original brief also asked for a privacy section explicitly. We added a dedicated section in English and Swedish that makes the four practical decisions visible: where the system runs, what may leave the company boundary, who may act and what can be audited. It avoids the false claim that every hosted provider trains on customer data and instead says that provider use, retention, caching, regions and any training must be deliberately agreed.
+
+## Round 4 — no further copy change is more valuable than real market evidence
+
+The page now answers what is built, why a ready-made assistant is not the whole answer, whether the CRM stays, what the company owns, how the first engagement works, how privacy is enforced, where data may run and why the founder understands this market. It gives both English and Swedish visitors a direct lead path. The brand and domain remain a real downstream choice, so they require owner confirmation before purchase. Beyond the legal notice and final domain, further polishing would be lower value than showing the page to qualified buyers and learning which workflow they would actually pay to improve.

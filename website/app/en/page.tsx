@@ -34,7 +34,7 @@ export default function EnglishHome() {
         <nav aria-label="Primary navigation">
           <a href="#work">What we build</a>
           <a href="#approach">How it works</a>
-          <a href="#why">Why own it</a>
+          <a href="#privacy">Privacy</a>
           <a href="/se" className="language-link" aria-label="Byt till svenska">SV</a>
           <a href="#contact" className="nav-cta">Discuss a system</a>
         </nav>
@@ -127,6 +127,20 @@ export default function EnglishHome() {
           </ul>
           <p className="control-note">Deploy in your cloud, a private environment or another setup chosen for the work. Access, retention and audit rules are explicit—not assumed.</p>
         </aside>
+      </section>
+
+      <section className="section privacy-section" id="privacy">
+        <div className="privacy-heading">
+          <p className="eyebrow">Privacy by design</p>
+          <h2>Privacy has to be part of the architecture—not a promise added later.</h2>
+          <p>Before any company data is connected, we agree on its boundary: what the system may use, which providers may process it, where it may run and how every sensitive action is controlled.</p>
+        </div>
+        <div className="privacy-controls">
+          <article><span>01</span><div><h3>Choose where it runs</h3><p>Your cloud, a private environment or another approved setup—selected for the actual sensitivity and performance needs.</p></div></article>
+          <article><span>02</span><div><h3>Limit what leaves</h3><p>Providers, retention, caching and regional boundaries are documented. Training on company data happens only when it is deliberately designed and approved.</p></div></article>
+          <article><span>03</span><div><h3>Control who can act</h3><p>People and systems receive only the access they need. High-stakes actions can require a named human approval.</p></div></article>
+          <article><span>04</span><div><h3>Keep an audit trail</h3><p>Inputs, outputs, decisions and corrections can be recorded so the company can inspect what happened and improve the system safely.</p></div></article>
+        </div>
       </section>
 
       <section className="section ownership-section" id="why">

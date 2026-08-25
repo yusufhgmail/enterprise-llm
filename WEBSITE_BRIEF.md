@@ -39,6 +39,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 ### Verified facts and settled decisions
 
 - Yusuf chose the name **Works Like Us** on 24 August 2026.
+- Yusuf confirmed on 25 August 2026 that **Yusuf Young AB** will initially operate Works Like Us. The company is named in the site footer and at the enquiry form; this does not imply that Yusuf Young AB has completed Works Like Us customer projects.
 - `workslikeus.com` and `workslikeus.ai` returned as unregistered in registry lookups on 24 August 2026 and again in the final pre-launch check that evening. Neither is owned until a completed purchase is confirmed, and availability can change at any time.
 - An exact-name TMview search for **Works Like Us** returned no rows across its participating trademark offices on 24 August 2026. Exact-name public-web and Swedish-company-directory searches also surfaced no obvious conflicting AI business or Swedish company. This is only a preliminary collision screen: it does not establish that the company name is registrable, rule out similar marks or unindexed use, or replace professional trademark clearance.
 - The intended service is to build, deploy and maintain company-specific LLMs, agents, workflows and business systems.
@@ -58,7 +59,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 
 - Enterprise buyers will agree that relying only on generally available frontier intelligence makes their operations more interchangeable.
 - Owning or training company-specific model weights will be necessary often enough to be a central commercial proposition, rather than one implementation option among several.
-- “Build the intelligence your competitors can’t rent” will create more qualified interest than an efficiency-first or privacy-first promise.
+- “Build AI that works like your company—not like everyone else’s” will create more qualified interest than leading with model ownership, efficiency or privacy alone.
 - A four-week first-system structure is commercially and operationally realistic.
 - A founder-led enquiry is the right initial conversion action.
 - The initial offer, price, delivery capacity and ongoing maintenance model remain unproven.
@@ -75,6 +76,5 @@ Reviewed on 25 August 2026. These sources inform the website hypothesis; they ar
 
 ## Material decisions still requiring Yusuf
 
-- The legal entity that will operate Works Like Us and appear in the privacy notice and footer.
 - Fresh approval of the exact `workslikeus.com` and `workslikeus.ai` checkout before purchase.
 - Approval for the public deployment after the legal identity and domain purchase are settled.

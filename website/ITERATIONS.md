@@ -73,3 +73,11 @@ Fresh registry lookups on 24 August 2026 again returned no registration object f
 TMview's exact-name search returned no trademark row for **Works Like Us** across its participating national, EU and international offices. Exact-name public-web searches and searches aimed at Swedish company listings also surfaced no obvious AI business or Swedish company using the name. This narrows the risk of an immediate exact-name collision; it is not legal clearance. TMview itself says it is not an official register, exact searches do not rule out confusingly similar marks, and public search can miss unindexed trading names.
 
 No site change followed from this check. The remaining material decision is still the legal operator that must be named in the footer and privacy notice. Domain purchase and public launch remain separate actions requiring Yusuf's fresh approval.
+
+## Round 10 — lead with the buyer's frustration, then explain sovereignty
+
+The previous opening began with the strategic consequence: “Build the intelligence your competitors can’t rent.” Yusuf liked the site but did not fully recognize the enterprise buyer's immediate job in that line. The primary champion is more likely to be a COO, business-unit leader, transformation lead or functional executive trying to improve a costly or inconsistent operation; the CIO, security and legal roles then decide whether the approach is technically and institutionally safe.
+
+The revised opening is **“Build AI that works like your company—not like everyone else’s.”** It names the frustration with generic assistants before asking the visitor to accept the larger ownership thesis, and it makes the Works Like Us name explain itself. “Sovereign AI for enterprise” remains the category label. The supporting copy connects the immediate job to one valuable process and a business result, then states the long-term advantage: the company keeps the intelligence it creates.
+
+This remains a pre-user positioning hypothesis. No real buyer has validated the revised line. Yusuf also confirmed that Yusuf Young AB will initially operate Works Like Us, so the footer and enquiry notice now name the company without implying any Works Like Us delivery history.

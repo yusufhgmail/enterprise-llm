@@ -27,3 +27,33 @@ The page answered privacy questions in the control card and FAQ, but a buyer sca
 ## Round 4 — no further copy change is more valuable than real market evidence
 
 The page now answers what is built, why a ready-made assistant is not the whole answer, whether the CRM stays, what the company owns, how the first engagement works, how privacy is enforced, where data may run and why the founder understands this market. It gives both English and Swedish visitors a direct lead path. The brand and domain remain a real downstream choice, so they require owner confirmation before purchase. Beyond the legal notice and final domain, further polishing would be lower value than showing the page to qualified buyers and learning which workflow they would actually pay to improve.
+
+## Round 5 — First Party Works explained the thesis but did not stick
+
+Yusuf rejected First Party Works because it was not easy enough to remember. We compared three genuinely different replacements before changing the live page:
+
+1. **Works Like Us** leads with the buyer's desired experience: AI that understands how this company actually works. The words are short, familiar in both the English and Swedish markets, and the exact `workslikeus.com` domain was available when checked on 24 August 2026. A search did not surface an obvious AI company using the exact name, although this is not formal trademark clearance.
+2. **House Rules AI** makes governance and company-specific rules memorable. It is narrower than the offer, however: the work also captures knowledge, judgment, tests, workflows and learning, and “house rules” can sound like hospitality or consumer software.
+3. **Uncopyable AI** states the competitive promise most boldly. The word is already widely used in branding and AI-moat discussions, including an established business-book and consulting theme, so it would be harder to own and risks sounding like a marketing consultancy.
+
+Yusuf chose **Works Like Us**. It is the easiest to repeat after one hearing and gives the page room to explain the deeper ownership, privacy and model-portability thesis. Both `workslikeus.com` and `workslikeus.ai` returned as unregistered in the registry lookup on 24 August 2026; availability can change until purchase. The English and Swedish preview now use the chosen name.
+
+## Round 6 — preserve the own-model belief, but lead with the business consequence
+
+The Business Builder method was adopted as the governing website workflow. Yusuf’s belief that companies will need their own LLM weights remains the fixed strategic thesis. The website must still distinguish that belief from claims already proven about buyers or delivery.
+
+We compared three narratives within the settled positioning:
+
+1. **Competitive advantage first:** generally available models become common infrastructure; the company must build intelligence around its own knowledge, decisions and workflows. This is the strongest direction for the managing director because it explains why the work matters beyond saving labour.
+2. **One useful workflow first:** lead with a narrow operational problem, the four-week first system and a measurable result. This makes the next action easier but understates the larger reason to build a company capability rather than buy another automation.
+3. **Sovereignty and privacy first:** lead with private deployment, owned weights and control over data and providers. This is strongest for the technical and security reviewer but risks making the business sound like infrastructure consulting and excludes buyers whose best architecture legitimately uses selected hosted models.
+
+The selected journey keeps competitive advantage as the opening argument, uses one useful workflow as the offer and next step, and places privacy and model control where technical and security doubts arise. The own-weights belief remains visible as a possible and strategically important destination, but the website does not falsely say that every useful first system requires training a model from scratch.
+
+## Round 7 — the evidence supports the argument, not the unqualified claims
+
+The Karp interview, Box's enterprise-AI research, the Box/AWS discussion and Aaron Levie's public writing converge on a useful initial argument: strong models are becoming broadly available, while company context, workflow integration, permissions, evaluation and operational learning remain difficult and valuable. They also show why the architecture should remain open to better frontier models while a company trains or owns weights only where that creates a real advantage.
+
+The same review exposed two claims that were stronger than the evidence. The page no longer implies that a control layer is already operational, and the first engagement no longer promises a four-week delivery schedule that has not been tested. Deployment is described as an explicit boundary agreed for the work instead of an unlimited “run anywhere” promise. The page retains the strategic belief in company-owned weights while separating it from what every first project must do.
+
+Local verification now covers the English and Swedish routes, root redirect, metadata, social card, favicon, form validation, successful D1 storage and cleanup, lint and production build. Keyboard focus styling, reduced-motion behavior and a usable mobile language switch were added before the production-like review. The largest remaining issue is verifying the rendered owner-only deployment on desktop and mobile, then identifying the legal operator before any public enquiry collection or domain launch.

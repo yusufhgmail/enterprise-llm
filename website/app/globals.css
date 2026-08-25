@@ -18,6 +18,7 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif; text-rendering: optimizeLegibility; }
 a { color: inherit; text-decoration: none; }
 ::selection { background: var(--signal); color: var(--ink); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
 
 .site-header { align-items: center; background: rgba(244, 241, 232, .94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); display: flex; height: 82px; justify-content: space-between; padding: 0 clamp(24px, 5vw, 80px); position: sticky; top: 0; z-index: 20; }
 .brand { align-items: center; display: inline-flex; font-size: 17px; font-weight: 690; gap: 11px; letter-spacing: -.03em; }
@@ -174,6 +175,10 @@ footer { align-items: center; background: var(--ink); color: var(--white); displ
 .footer-brand .brand-mark { background: var(--signal); color: var(--ink); }
 footer p { color: rgba(255,255,255,.5); margin: 0; }
 footer > span { color: rgba(255,255,255,.5); justify-self: end; }
+.not-found { display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh; padding: clamp(30px, 6vw, 80px); }
+.not-found > div { margin: 12vh 0 auto; max-width: 850px; }
+.not-found h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(55px, 8vw, 104px); font-weight: 400; letter-spacing: -.065em; line-height: .92; margin: 0; }
+.not-found > div > p:not(.eyebrow) { color: var(--muted); font-size: 17px; line-height: 1.55; margin: 28px 0 0; }
 
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; }
@@ -188,7 +193,8 @@ footer > span { color: rgba(255,255,255,.5); justify-self: end; }
 
 @media (max-width: 700px) {
   .site-header { height: 70px; }
-  .site-header nav a:not(.nav-cta) { display: none; }
+  .site-header nav { gap: 14px; }
+  .site-header nav a:not(.nav-cta):not(.language-link) { display: none; }
   .nav-cta { padding: 10px 12px; }
   .hero-copy { min-height: auto; padding: 82px 24px 58px; }
   .hero h1 { font-size: clamp(51px, 15vw, 72px); }
@@ -215,4 +221,12 @@ footer > span { color: rgba(255,255,255,.5); justify-self: end; }
   .button-light { width: 100%; }
   footer { align-items: start; grid-template-columns: 1fr; padding-bottom: 38px; padding-top: 38px; }
   footer > span { justify-self: start; }
+}
+
+@media (max-width: 480px) {
+  .site-header > .brand > span:last-child { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

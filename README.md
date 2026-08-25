@@ -1,5 +1,7 @@
 # Enterprise LLM
 
+> The current website source of truth is [WEBSITE_BRIEF.md](WEBSITE_BRIEF.md). The material below is the original concept record and contains exploratory market, pricing and implementation hypotheses that are not verified facts.
+
 **Created:** 2026-08-22 by Yusuf Young
 **Status:** Concept stage. Building vision websites next.
 

@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'First Party Works — Company-owned AI systems',
-  description: 'We design, deploy and operate AI models and business systems that learn from your company, follow your rules and run where you choose.',
+  metadataBase: new URL('https://workslikeus.com'),
+  title: 'Works Like Us — Company-owned AI systems',
+  description: 'We design, deploy and operate AI models and business systems built around your company knowledge, rules and chosen deployment boundary.',
 };
 
 export default function RootLayout({

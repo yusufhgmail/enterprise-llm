@@ -2,8 +2,27 @@ import LeadForm from '../components/LeadForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'First Party Works — Bygg intelligensen dina konkurrenter inte kan hyra',
-  description: 'Företagsägda AI-system som lär av er kunskap, följer era regler och körs där ni väljer.',
+  title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
+  description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+  alternates: {
+    canonical: '/se',
+    languages: { en: '/en', sv: '/se' },
+  },
+  openGraph: {
+    title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
+    description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+    url: '/se',
+    siteName: 'Works Like Us',
+    locale: 'sv_SE',
+    type: 'website',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Works Like Us' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
+    description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+    images: ['/og.png'],
+  },
 };
 
 const systems = [
@@ -35,8 +54,8 @@ export default function SwedishHome() {
   return (
     <main lang="sv">
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="First Party Works startsida">
-          <span className="brand-mark" aria-hidden="true">F</span><span>First Party Works</span>
+        <a className="brand" href="#top" aria-label="Works Like Us startsida">
+          <span className="brand-mark" aria-hidden="true">W</span><span>Works Like Us</span>
         </a>
         <nav aria-label="Huvudmeny">
           <a href="#work">Vad vi bygger</a><a href="#approach">Så fungerar det</a><a href="#privacy">Integritet</a>
@@ -49,7 +68,7 @@ export default function SwedishHome() {
         <div className="hero-copy">
           <p className="eyebrow">Företagsägda AI-system</p>
           <h1>Bygg intelligensen dina konkurrenter inte kan hyra.</h1>
-          <p className="hero-lede">Vi bygger och driver AI-system kring kunskapen, besluten och arbetsflödena som gör ert företag annorlunda. De följer era regler, blir bättre av er återkoppling och körs där ni väljer.</p>
+          <p className="hero-lede">Vi bygger och driver AI-system kring kunskapen, besluten och arbetsflödena som gör ert företag annorlunda. De byggs kring era regler, blir bättre av er återkoppling och körs inom en överenskommen gräns.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">Diskutera ert första system <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#approach">Se hur det fungerar <span aria-hidden="true">↓</span></a>
@@ -95,7 +114,7 @@ export default function SwedishHome() {
           </ol>
         </div>
         <aside className="control-card">
-          <div className="control-card-top"><span>KONTROLLAGER</span><span className="status-dot">I drift</span></div>
+          <div className="control-card-top"><span>KONTROLLAGER</span><span className="status-dot">Bestäms före byggstart</span></div>
           <h3>Ni behåller kontrollen över:</h3><ul>{controls.map((control) => <li key={control}>{control}</li>)}</ul>
           <p className="control-note">Kör i ert moln, en privat miljö eller en annan lösning vald för arbetet. Åtkomst, lagringstid och spårbarhet bestäms uttryckligen—de antas inte.</p>
         </aside>
@@ -116,7 +135,7 @@ export default function SwedishHome() {
       </section>
 
       <section className="section ownership-section" id="why">
-        <div className="section-heading"><p className="eyebrow">Varför äga företagslagret</p><h2>Hyr den bästa allmänna intelligensen. Äg delen som gör den till er.</h2><p>De bästa generella modellerna är användbara och kommer fortsätta förändras. Er långsiktiga tillgång är företagskontexten, arbetsflödet och återkopplingen som kan flytta mellan dem.</p></div>
+        <div className="section-heading"><p className="eyebrow">Varför äga företagslagret</p><h2>Använd ledande modeller. Bygg och äg intelligensen som blir ert försprång.</h2><p>Börja med den starkaste modellen för arbetet. När företagsdata och återkoppling växer kan ni äga eller träna modellvikter och adaptrar där de gör förmågan mer privat, effektiv eller svår att kopiera. Behåll kunskapen, arbetsflödet och lärandet runt varje modell.</p></div>
         <div className="ownership-grid">
           <article><span>Bara tillgång</span><h3>En kapabel modell som alla kan använda</h3><ul><li>Allmän kunskap</li><li>Generellt beteende</li><li>Företagsanpassningen kan bli fast i verktyget</li></ul></article>
           <article className="owned-column"><span>Företagsförmåga</span><h3>Ett system som blir bättre på ert arbete</h3><ul><li>Er verksamhetskunskap</li><li>Era beslut och skyddsräcken</li><li>Exempel, korrigeringar och tester som företaget behåller</li></ul></article>
@@ -125,7 +144,7 @@ export default function SwedishHome() {
 
       <section className="first-system-section">
         <div><p className="eyebrow">Det första uppdraget</p><h2>Bevisa ett användbart system innan ni åtar er en transformation.</h2></div>
-        <ol><li><span>Vecka 1</span><strong>Kartlägg arbetet och affärsresultatet</strong></li><li><span>Vecka 2–3</span><strong>Bygg med en liten, kontrollerad mängd riktig företagsdata</strong></li><li><span>Vecka 4</span><strong>Låt människorna som gör jobbet testa och avgör vad som har förtjänat rätten att fortsätta</strong></li></ol>
+        <ol><li><span>Först</span><strong>Kartlägg arbetet och affärsresultatet</strong></li><li><span>Sedan</span><strong>Bygg med en liten, kontrollerad mängd riktig företagsdata</strong></li><li><span>Före nästa steg</span><strong>Låt människorna som gör jobbet testa och avgör vad som har förtjänat rätten att fortsätta</strong></li></ol>
       </section>
 
       <section className="section founder-section">
@@ -149,7 +168,7 @@ export default function SwedishHome() {
         <LeadForm language="sv" />
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">F</span><span>First Party Works</span></a><p>Företagsägda modeller och AI-system.</p><span><a href="/en">English</a> · <a href="/se">Svenska</a></span></footer>
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">W</span><span>Works Like Us</span></a><p>Företagsägda modeller och AI-system.</p><span><a href="/en">English</a> · <a href="/se">Svenska</a></span></footer>
     </main>
   );
 }

@@ -40,6 +40,7 @@ const copy = {
 export default function LeadForm({ language = 'en' }: LeadFormProps) {
   const [state, setState] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const t = copy[language];
+  const otherStack = language === 'sv' ? 'Annat / utvärderar alternativ' : 'Other / evaluating';
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -73,7 +74,7 @@ export default function LeadForm({ language = 'en' }: LeadFormProps) {
   }
 
   return (
-    <form className="lead-form" onSubmit={submit}>
+    <form className="lead-form" onSubmit={submit} aria-busy={state === 'sending'}>
       <div className="field-row">
         <label><span>{t.name}</span><input name="name" autoComplete="name" required /></label>
         <label><span>{t.email}</span><input name="email" type="email" autoComplete="email" required /></label>
@@ -84,7 +85,7 @@ export default function LeadForm({ language = 'en' }: LeadFormProps) {
           <span>{t.stack}</span>
           <select name="stack" defaultValue="">
             <option value="" disabled>{t.stackPlaceholder}</option>
-            <option>HubSpot</option><option>Salesforce</option><option>Pipedrive</option><option>Microsoft Dynamics</option><option>Other / evaluating</option>
+            <option>HubSpot</option><option>Salesforce</option><option>Pipedrive</option><option>Microsoft Dynamics</option><option>{otherStack}</option>
           </select>
         </label>
       </div>

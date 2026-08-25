@@ -27,9 +27,9 @@ export default function EnglishHome() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="First Party Works home">
-          <span className="brand-mark" aria-hidden="true">F</span>
-          <span>First Party Works</span>
+        <a className="brand" href="#top" aria-label="Works Like Us home">
+          <span className="brand-mark" aria-hidden="true">W</span>
+          <span>Works Like Us</span>
         </a>
         <nav aria-label="Primary navigation">
           <a href="#work">What we build</a>
@@ -44,7 +44,7 @@ export default function EnglishHome() {
         <div className="hero-copy">
           <p className="eyebrow">Company-owned AI systems</p>
           <h1>Build the intelligence your competitors can’t rent.</h1>
-          <p className="hero-lede">We design and run AI systems around the knowledge, decisions and workflows that make your company different. They follow your rules, improve from your feedback and run where you choose.</p>
+          <p className="hero-lede">We design and run AI systems around the knowledge, decisions and workflows that make your company different. They are built around your rules, improve from your feedback and run inside an agreed deployment boundary.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">Discuss your first system <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#approach">See how it works <span aria-hidden="true">↓</span></a>
@@ -119,7 +119,7 @@ export default function EnglishHome() {
         <aside className="control-card">
           <div className="control-card-top">
             <span>CONTROL LAYER</span>
-            <span className="status-dot">Operational</span>
+            <span className="status-dot">Defined before build</span>
           </div>
           <h3>You keep control of:</h3>
           <ul>
@@ -146,8 +146,8 @@ export default function EnglishHome() {
       <section className="section ownership-section" id="why">
         <div className="section-heading">
           <p className="eyebrow">Why own the company layer</p>
-          <h2>Rent frontier intelligence. Own the part that makes it yours.</h2>
-          <p>The best general models are useful and will keep changing. Your durable asset is the company context, workflow and feedback system that can move between them.</p>
+          <h2>Use frontier intelligence. Build and own the intelligence that becomes your edge.</h2>
+          <p>Start with the strongest model for the work. As company data and feedback accumulate, own or train the model weights and adapters where they make the capability more private, effective or difficult to copy. Keep the knowledge, workflow and learning system around every model.</p>
         </div>
         <div className="ownership-grid">
           <article>
@@ -169,9 +169,9 @@ export default function EnglishHome() {
           <h2>Prove one useful system before committing to a transformation.</h2>
         </div>
         <ol>
-          <li><span>Week 1</span><strong>Map the work and the business result</strong></li>
-          <li><span>Weeks 2–3</span><strong>Build with a small, controlled set of real company data</strong></li>
-          <li><span>Week 4</span><strong>Put it in front of the people who do the work and decide what earned the right to continue</strong></li>
+          <li><span>First</span><strong>Map the work and the business result</strong></li>
+          <li><span>Then</span><strong>Build with a small, controlled set of real company data</strong></li>
+          <li><span>Before expansion</span><strong>Put it in front of the people who do the work and decide what earned the right to continue</strong></li>
         </ol>
       </section>
 
@@ -204,7 +204,7 @@ export default function EnglishHome() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark">F</span><span>First Party Works</span></a>
+        <a className="brand footer-brand" href="#top"><span className="brand-mark">W</span><span>Works Like Us</span></a>
         <p>Company-owned models and AI systems.</p>
         <span><a href="/en">English</a> · <a href="/se">Svenska</a></span>
       </footer>
@@ -215,6 +215,25 @@ import LeadForm from '../components/LeadForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'First Party Works — Build the intelligence your competitors can’t rent',
-  description: 'Company-owned AI systems that learn from your knowledge, follow your rules and run where you choose.',
+  title: 'Works Like Us — Build the intelligence your competitors can’t rent',
+  description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+  alternates: {
+    canonical: '/en',
+    languages: { en: '/en', sv: '/se' },
+  },
+  openGraph: {
+    title: 'Works Like Us — Build the intelligence your competitors can’t rent',
+    description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+    url: '/en',
+    siteName: 'Works Like Us',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Works Like Us' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Works Like Us — Build the intelligence your competitors can’t rent',
+    description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+    images: ['/og.png'],
+  },
 };

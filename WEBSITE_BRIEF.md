@@ -60,7 +60,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 
 - Enterprise buyers will agree that relying only on generally available frontier intelligence makes their operations more interchangeable.
 - Owning or training company-specific model weights will be necessary often enough to be a central commercial proposition, rather than one implementation option among several.
-- “Build AI that works like your company—not like everyone else’s” will create more qualified interest than leading with model ownership, efficiency or privacy alone.
+- “Build AI that works the way your company works” will create more qualified interest than leading with model ownership, efficiency or privacy alone.
 - A four-week first-system structure is commercially and operationally realistic.
 - A founder-led enquiry is the right initial conversion action.
 - The initial offer, price, delivery capacity and ongoing maintenance model remain unproven.
@@ -78,4 +78,4 @@ Reviewed on 25 August 2026. These sources inform the website hypothesis; they ar
 ## Material decisions still requiring Yusuf
 
 - Fresh approval of the exact `workslikeus.com` and `workslikeus.ai` checkout before purchase.
-- Approval for the public deployment after the legal identity and domain purchase are settled.
+- Yusuf approved the site for launch on 25 August 2026. He then asked for the complete English and Swedish journeys to be rewritten in plain, direct language before publication. The launch approval still stands; the rewritten version must pass the same private verification before the domain purchase proceeds.

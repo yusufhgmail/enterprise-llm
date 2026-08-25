@@ -65,3 +65,11 @@ The owner-only Works Like Us deployment was reviewed at 1440×1000 and 390×844 
 A clearly labelled synthetic enquiry was submitted through the rendered English form. The success message appeared and the exact record reached the live `leads` table, proving the critical visitor journey from page entry through durable storage. The row is named “Preview Verification 2026-08-25” and is not a customer enquiry. The only defect found in this pass was that the favicon asset worked at its URL but had not been declared in page metadata; that declaration was added before the final deployment. Browser logs contained no Works Like Us application errors.
 
 A fresh cold-reading and challenge pass found no remaining material copy, hierarchy, privacy, mobile, language or functional issue. The two unresolved items are external decisions rather than site defects: the public privacy notice must name the legal operator, and the `.com` plus `.ai` purchase and public launch still require Yusuf's fresh approval. Real visitor response and conversion remain unvalidated.
+
+## Round 9 — the chosen name passes a preliminary collision screen
+
+Fresh registry lookups on 24 August 2026 again returned no registration object for `workslikeus.com` or `workslikeus.ai`. Both domains therefore still appeared available at the time of the check, but neither is reserved until a purchase succeeds.
+
+TMview's exact-name search returned no trademark row for **Works Like Us** across its participating national, EU and international offices. Exact-name public-web searches and searches aimed at Swedish company listings also surfaced no obvious AI business or Swedish company using the name. This narrows the risk of an immediate exact-name collision; it is not legal clearance. TMview itself says it is not an official register, exact searches do not rule out confusingly similar marks, and public search can miss unindexed trading names.
+
+No site change followed from this check. The remaining material decision is still the legal operator that must be named in the footer and privacy notice. Domain purchase and public launch remain separate actions requiring Yusuf's fresh approval.

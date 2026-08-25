@@ -81,3 +81,18 @@ The previous opening began with the strategic consequence: “Build the intellig
 The revised opening is **“Build AI that works like your company—not like everyone else’s.”** It names the frustration with generic assistants before asking the visitor to accept the larger ownership thesis, and it makes the Works Like Us name explain itself. “Sovereign AI for enterprise” remains the category label. The supporting copy connects the immediate job to one valuable process and a business result, then states the long-term advantage: the company keeps the intelligence it creates.
 
 This remains a pre-user positioning hypothesis. No real buyer has validated the revised line. Yusuf also confirmed that Yusuf Young AB will initially operate Works Like Us, so the footer and enquiry notice now name the company without implying any Works Like Us delivery history.
+
+## Round 11 — say what the business does without making the buyer translate it
+
+Yusuf approved the direction but found the copy harder to understand than it needed to be. The site used strategic and technical labels before saying what they meant. Examples included “sovereign AI,” “company capability,” “control layer,” “model adapters,” “architecture,” “audit trail” and “provider exit path.” Those terms made the buyer decode the argument.
+
+The complete English and Swedish journeys were rewritten around direct questions and actions:
+
+1. The opening now says that Works Like Us uses the company’s knowledge, rules and tools to build AI for one real part of the business.
+2. The first project now says exactly what happens: choose one problem, build a small working version, test it with the team and continue only if it works.
+3. The privacy section now names the decisions directly: what data is used, where it goes, who may see it, what may happen without a person and what should be recorded.
+4. The ownership argument now makes the comparison in ordinary language: competitors can use the same general AI models, but they do not have the company’s knowledge, rules, examples and corrections.
+5. The path to a company-trained model remains visible without leading with model weights. The site says that Works Like Us can later train a model for one company task when that works better or gives the company more control.
+6. The enquiry form now asks what work the visitor wants to make faster or better and says plainly what Works Like Us will send back.
+
+This is a language change, not a change in strategy or offer. The visual design, English and Swedish routes, privacy boundary, founder evidence and first-system action remain the same. Real buyer response is still untested.

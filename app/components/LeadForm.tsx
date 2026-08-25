@@ -11,28 +11,28 @@ const copy = {
     name: 'Your name',
     email: 'Work email',
     company: 'Company',
-    stack: 'Current setup (optional)',
-    stackPlaceholder: 'Choose one',
-    problem: 'Where is valuable work slow, inconsistent or stuck in people’s heads?',
-    problemPlaceholder: 'A few sentences are enough.',
-    button: 'Show us the opportunity',
+    stack: 'Main software (optional)',
+    stackPlaceholder: 'Select one',
+    problem: 'What work do you want to make faster or better?',
+    problemPlaceholder: 'Tell us what happens today and what should improve.',
+    button: 'Tell us what to improve',
     sending: 'Sending…',
-    successTitle: 'Thank you. We’ll look at the work, not just the technology.',
-    successText: 'We’ll reply with the first system we would test and what it would need to prove.',
+    successTitle: 'Thank you. We’ll review the work and reply.',
+    successText: 'We’ll suggest the first AI system we would test and the result it should improve.',
     error: 'That did not go through. Please try again.',
   },
   sv: {
     name: 'Ditt namn',
     email: 'Jobbmejl',
     company: 'Företag',
-    stack: 'Nuvarande system (valfritt)',
+    stack: 'Viktigaste programmet (valfritt)',
     stackPlaceholder: 'Välj ett',
-    problem: 'Var går värdefullt arbete långsamt, ojämnt eller fastnar hos ett fåtal personer?',
-    problemPlaceholder: 'Ett par meningar räcker.',
-    button: 'Visa oss möjligheten',
+    problem: 'Vilket arbete vill ni göra snabbare eller bättre?',
+    problemPlaceholder: 'Berätta hur det fungerar idag och vad som ska bli bättre.',
+    button: 'Berätta vad ni vill förbättra',
     sending: 'Skickar…',
-    successTitle: 'Tack. Vi tittar på arbetet, inte bara tekniken.',
-    successText: 'Vi återkommer med det första systemet vi skulle testa och vad det behöver bevisa.',
+    successTitle: 'Tack. Vi går igenom arbetet och återkommer.',
+    successText: 'Vi föreslår det första AI-system vi skulle testa och vilket resultat det ska förbättra.',
     error: 'Det gick inte att skicka. Försök igen.',
   },
 };
@@ -92,7 +92,7 @@ export default function LeadForm({ language = 'en' }: LeadFormProps) {
       <label className="problem-field"><span>{t.problem}</span><textarea name="problem" rows={4} placeholder={t.problemPlaceholder} required /></label>
       <label className="company-site" aria-hidden="true"><span>Website</span><input name="website" tabIndex={-1} autoComplete="off" /></label>
       <div className="form-submit">
-        <p>{language === 'sv' ? 'Yusuf Young AB använder bara uppgifterna för att bedöma och besvara din förfrågan. Börja med “Integritetsbegäran” om du vill begära tillgång, rättelse eller radering.' : 'Yusuf Young AB uses these details only to assess and respond to your enquiry. Begin with “Privacy request” to request access, correction or deletion.'}</p>
+        <p>{language === 'sv' ? 'Yusuf Young AB använder bara uppgifterna för att läsa och svara på din förfrågan. Skriv “Integritetsbegäran” i meddelandet om du vill få ut, rätta eller radera dina uppgifter.' : 'Yusuf Young AB uses these details only to review and reply to your request. Write “Privacy request” in the message if you want us to send, correct or delete your data.'}</p>
         <button className="button button-light" type="submit" disabled={state === 'sending'}>{state === 'sending' ? t.sending : t.button}<span aria-hidden="true">↗</span></button>
       </div>
       {state === 'error' && <p className="form-error" role="alert">{t.error}</p>}

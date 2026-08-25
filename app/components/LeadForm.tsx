@@ -92,7 +92,7 @@ export default function LeadForm({ language = 'en' }: LeadFormProps) {
       <label className="problem-field"><span>{t.problem}</span><textarea name="problem" rows={4} placeholder={t.problemPlaceholder} required /></label>
       <label className="company-site" aria-hidden="true"><span>Website</span><input name="website" tabIndex={-1} autoComplete="off" /></label>
       <div className="form-submit">
-        <p>{language === 'sv' ? 'Vi använder bara uppgifterna för att svara på din förfrågan.' : 'We use these details only to respond to your enquiry.'}</p>
+        <p>{language === 'sv' ? 'Yusuf Young AB använder bara uppgifterna för att bedöma och besvara din förfrågan. Börja med “Integritetsbegäran” om du vill begära tillgång, rättelse eller radering.' : 'Yusuf Young AB uses these details only to assess and respond to your enquiry. Begin with “Privacy request” to request access, correction or deletion.'}</p>
         <button className="button button-light" type="submit" disabled={state === 'sending'}>{state === 'sending' ? t.sending : t.button}<span aria-hidden="true">↗</span></button>
       </div>
       {state === 'error' && <p className="form-error" role="alert">{t.error}</p>}

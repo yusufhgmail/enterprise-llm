@@ -42,11 +42,11 @@ export default function EnglishHome() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Company-owned AI systems</p>
-          <h1>Build the intelligence your competitors can’t rent.</h1>
-          <p className="hero-lede">We design and run AI systems around the knowledge, decisions and workflows that make your company different. They are built around your rules, improve from your feedback and run inside an agreed deployment boundary.</p>
+          <p className="eyebrow">Sovereign AI for enterprise</p>
+          <h1>Build AI that works like your company—not like everyone else’s.</h1>
+          <p className="hero-lede">We turn your proprietary knowledge, decisions and workflows into a controlled AI system. Start with one valuable process, prove the business result and keep the intelligence your company creates.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#contact">Discuss your first system <span aria-hidden="true">↗</span></a>
+            <a className="button button-primary" href="#contact">Find the first system worth building <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#approach">See how it works <span aria-hidden="true">↓</span></a>
           </div>
           <div className="trust-line" aria-label="Our principles">
@@ -205,7 +205,7 @@ export default function EnglishHome() {
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark">W</span><span>Works Like Us</span></a>
-        <p>Company-owned models and AI systems.</p>
+        <p>Operated by Yusuf Young AB.</p>
         <span><a href="/en">English</a> · <a href="/se">Svenska</a></span>
       </footer>
     </main>
@@ -215,15 +215,15 @@ import LeadForm from '../components/LeadForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Works Like Us — Build the intelligence your competitors can’t rent',
-  description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+  title: 'Works Like Us — Build AI that works like your company',
+  description: 'Turn proprietary knowledge, decisions and workflows into a controlled AI system your company keeps.',
   alternates: {
     canonical: '/en',
     languages: { en: '/en', sv: '/se' },
   },
   openGraph: {
-    title: 'Works Like Us — Build the intelligence your competitors can’t rent',
-    description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+    title: 'Works Like Us — Build AI that works like your company',
+    description: 'Turn proprietary knowledge, decisions and workflows into a controlled AI system your company keeps.',
     url: '/en',
     siteName: 'Works Like Us',
     locale: 'en_US',
@@ -232,8 +232,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Works Like Us — Build the intelligence your competitors can’t rent',
-    description: 'Company-owned AI systems built around your knowledge, rules and an explicit deployment boundary.',
+    title: 'Works Like Us — Build AI that works like your company',
+    description: 'Turn proprietary knowledge, decisions and workflows into a controlled AI system your company keeps.',
     images: ['/og.png'],
   },
 };

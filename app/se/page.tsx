@@ -2,15 +2,15 @@ import LeadForm from '../components/LeadForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
-  description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+  title: 'Works Like Us — Bygg AI som fungerar som ert företag',
+  description: 'Gör er egen kunskap, era beslut och arbetsflöden till ett kontrollerat AI-system som företaget behåller.',
   alternates: {
     canonical: '/se',
     languages: { en: '/en', sv: '/se' },
   },
   openGraph: {
-    title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
-    description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+    title: 'Works Like Us — Bygg AI som fungerar som ert företag',
+    description: 'Gör er egen kunskap, era beslut och arbetsflöden till ett kontrollerat AI-system som företaget behåller.',
     url: '/se',
     siteName: 'Works Like Us',
     locale: 'sv_SE',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Works Like Us — Bygg intelligensen dina konkurrenter inte kan hyra',
-    description: 'Företagsägda AI-system byggda kring er kunskap, era regler och en tydlig driftgräns.',
+    title: 'Works Like Us — Bygg AI som fungerar som ert företag',
+    description: 'Gör er egen kunskap, era beslut och arbetsflöden till ett kontrollerat AI-system som företaget behåller.',
     images: ['/og.png'],
   },
 };
@@ -66,11 +66,11 @@ export default function SwedishHome() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Företagsägda AI-system</p>
-          <h1>Bygg intelligensen dina konkurrenter inte kan hyra.</h1>
-          <p className="hero-lede">Vi bygger och driver AI-system kring kunskapen, besluten och arbetsflödena som gör ert företag annorlunda. De byggs kring era regler, blir bättre av er återkoppling och körs inom en överenskommen gräns.</p>
+          <p className="eyebrow">Suverän AI för företag</p>
+          <h1>Bygg AI som fungerar som ert företag—inte som alla andras.</h1>
+          <p className="hero-lede">Vi gör er egen kunskap, era beslut och arbetsflöden till ett kontrollerat AI-system. Börja med en värdefull process, bevisa affärsresultatet och behåll intelligensen som företaget skapar.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#contact">Diskutera ert första system <span aria-hidden="true">↗</span></a>
+            <a className="button button-primary" href="#contact">Hitta det första systemet värt att bygga <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#approach">Se hur det fungerar <span aria-hidden="true">↓</span></a>
           </div>
           <div className="trust-line" aria-label="Våra principer">
@@ -168,7 +168,7 @@ export default function SwedishHome() {
         <LeadForm language="sv" />
       </section>
 
-      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">W</span><span>Works Like Us</span></a><p>Företagsägda modeller och AI-system.</p><span><a href="/en">English</a> · <a href="/se">Svenska</a></span></footer>
+      <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">W</span><span>Works Like Us</span></a><p>Drivs av Yusuf Young AB.</p><span><a href="/en">English</a> · <a href="/se">Svenska</a></span></footer>
     </main>
   );
 }

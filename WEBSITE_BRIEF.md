@@ -46,6 +46,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - The website must address competitive advantage and privacy, serve English and Swedish visitors, and target enterprise buyers with Swedish companies first.
 - Yusuf founded FunnelBud after implementing HubSpot and Salesforce systems; that public operating background can support credibility. It is not evidence of completed Works Like Us projects.
 - The business does not yet have verified Works Like Us customers, case studies, testimonials, performance results, certifications, a settled price list or a proven commercial model.
+- The owner-only fifth preview was verified on 25 August 2026 after the buyer-first opening changed. English and Swedish rendered correctly at 1440×1000 and 390×844, the revised headlines and calls to action remained legible without horizontal overflow, Yusuf Young AB appeared in the footer and enquiry notice, and the browser reported no site errors or warnings. The enquiry storage path had already been proven end to end in the preceding private deployment; this revision changed its notice text, not its submission logic.
 
 ### Reasonable inferences used for the initial website
 

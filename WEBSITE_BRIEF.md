@@ -39,7 +39,8 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 ### Verified facts and settled decisions
 
 - Yusuf chose the name **Works Like Us** on 24 August 2026.
-- `workslikeus.com` and `workslikeus.ai` returned as unregistered in registry lookups on 24 August 2026. Neither is owned until a completed purchase is confirmed.
+- `workslikeus.com` and `workslikeus.ai` returned as unregistered in registry lookups on 24 August 2026 and again in the final pre-launch check that evening. Neither is owned until a completed purchase is confirmed, and availability can change at any time.
+- An exact-name TMview search for **Works Like Us** returned no rows across its participating trademark offices on 24 August 2026. Exact-name public-web and Swedish-company-directory searches also surfaced no obvious conflicting AI business or Swedish company. This is only a preliminary collision screen: it does not establish that the company name is registrable, rule out similar marks or unindexed use, or replace professional trademark clearance.
 - The intended service is to build, deploy and maintain company-specific LLMs, agents, workflows and business systems.
 - The website must address competitive advantage and privacy, serve English and Swedish visitors, and target enterprise buyers with Swedish companies first.
 - Yusuf founded FunnelBud after implementing HubSpot and Salesforce systems; that public operating background can support credibility. It is not evidence of completed Works Like Us projects.

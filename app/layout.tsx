@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://workslikeus.com'),
   title: 'Works Like Us — Company-owned AI systems',
   description: 'We design, deploy and operate AI models and business systems built around your company knowledge, rules and chosen deployment boundary.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

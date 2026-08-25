@@ -41,6 +41,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - Yusuf chose the name **Works Like Us** on 24 August 2026.
 - Yusuf confirmed on 25 August 2026 that **Yusuf Young AB** will initially operate Works Like Us. The company is named in the site footer and at the enquiry form; this does not imply that Yusuf Young AB has completed Works Like Us customer projects.
 - `workslikeus.com` and `workslikeus.ai` returned as unregistered in registry lookups on 24 August 2026 and again in the final pre-launch check that evening. Neither is owned until a completed purchase is confirmed, and availability can change at any time.
+- The authenticated Cloudflare Registrar purchase flow still listed both domains as available on 25 August 2026. `workslikeus.com` was USD 10.46 for one year and renews at USD 10.46 per year. `workslikeus.ai` was USD 160 for the registry-required two-year first term and renews at USD 80 per year with a two-year renewal requirement. The listed registration subtotal is USD 170.46 before any applicable tax. Cloudflare states that domain purchases are non-refundable. No purchase has been completed.
 - An exact-name TMview search for **Works Like Us** returned no rows across its participating trademark offices on 24 August 2026. Exact-name public-web and Swedish-company-directory searches also surfaced no obvious conflicting AI business or Swedish company. This is only a preliminary collision screen: it does not establish that the company name is registrable, rule out similar marks or unindexed use, or replace professional trademark clearance.
 - The intended service is to build, deploy and maintain company-specific LLMs, agents, workflows and business systems.
 - The website must address competitive advantage and privacy, serve English and Swedish visitors, and target enterprise buyers with Swedish companies first.
@@ -77,5 +78,5 @@ Reviewed on 25 August 2026. These sources inform the website hypothesis; they ar
 
 ## Material decisions still requiring Yusuf
 
-- Fresh approval of the exact `workslikeus.com` and `workslikeus.ai` checkout before purchase.
+- Fresh approval to buy `workslikeus.com` and `workslikeus.ai` for the listed USD 170.46 subtotal, plus any tax Cloudflare applies before payment.
 - Yusuf approved the site for launch on 25 August 2026. He then asked for the complete English and Swedish journeys to be rewritten in plain, direct language before publication. The launch approval still stands; the rewritten version must pass the same private verification before the domain purchase proceeds.

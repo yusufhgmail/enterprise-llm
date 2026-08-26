@@ -31,7 +31,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - Relevant roles: managing director or operations leader, technical leader, security or legal reviewer, and the people who will use the first system.
 - Primary visitor action: submit enough information for Works Like Us to propose the first company-specific AI system worth testing.
 - Languages: complete English and Swedish journeys at `/en` and `/se`.
-- Publication target: a public v1 on `workslikeus.com`, with `workslikeus.ai` also desired if it is still available and the exact purchase is approved.
+- Publication: the public v1 is live on `workslikeus.com`; `workslikeus.ai` routes to the same English and Swedish site.
 - Scope: explain the business as a real offer without inventing customers, outcomes, certifications, model ownership, delivery capacity or commercial terms that do not yet exist.
 
 ## Truth inventory
@@ -40,14 +40,14 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 
 - Yusuf chose the name **Works Like Us** on 24 August 2026.
 - Yusuf confirmed on 25 August 2026 that **Yusuf Young AB** will initially operate Works Like Us. The company is named in the site footer and at the enquiry form; this does not imply that Yusuf Young AB has completed Works Like Us customer projects.
-- `workslikeus.com` and `workslikeus.ai` returned as unregistered in registry lookups on 24 August 2026 and again in the final pre-launch check that evening. Neither is owned until a completed purchase is confirmed, and availability can change at any time.
-- The authenticated Cloudflare Registrar purchase flow still listed both domains as available on 25 August 2026. `workslikeus.com` was USD 10.46 for one year and renews at USD 10.46 per year. `workslikeus.ai` was USD 160 for the registry-required two-year first term and renews at USD 80 per year with a two-year renewal requirement. The listed registration subtotal is USD 170.46 before any applicable tax. Cloudflare states that domain purchases are non-refundable. No purchase has been completed.
+- Yusuf bought `workslikeus.com` and `workslikeus.ai` through GoDaddy on 26 August 2026. `workslikeus.com` cost MXN229.99 for one year and renews in August 2027 for MXN399.99. `workslikeus.ai` cost MXN3,558.98 for the required two-year first term and renews in August 2028 for MXN5,423.39. GoDaddy charged MXN3.47 in tax and fees, for a total of MXN3,792.44.
 - An exact-name TMview search for **Works Like Us** returned no rows across its participating trademark offices on 24 August 2026. Exact-name public-web and Swedish-company-directory searches also surfaced no obvious conflicting AI business or Swedish company. This is only a preliminary collision screen: it does not establish that the company name is registrable, rule out similar marks or unindexed use, or replace professional trademark clearance.
 - The intended service is to build, deploy and maintain company-specific LLMs, agents, workflows and business systems.
 - The website must address competitive advantage and privacy, serve English and Swedish visitors, and target enterprise buyers with Swedish companies first.
 - Yusuf founded FunnelBud after implementing HubSpot and Salesforce systems; that public operating background can support credibility. It is not evidence of completed Works Like Us projects.
 - The business does not yet have verified Works Like Us customers, case studies, testimonials, performance results, certifications, a settled price list or a proven commercial model.
 - The owner-only sixth preview was verified on 25 August 2026 after the complete plain-language rewrite. English and Swedish rendered correctly at 1440×1000 and 390×844. The new headings, calls to action, company-system diagram and form labels remained legible without horizontal overflow. Both language switches and both enquiry links led to the right place, every required form field remained present, and Yusuf Young AB appeared in the footer and enquiry notice. The enquiry storage path had already been proven end to end in an earlier private deployment; this revision changed its wording, not its submission logic.
+- The sixth version was made public on 26 August 2026. GoDaddy DNS for both domains points to the two Sites apex addresses and contains the required ownership and certificate records. Sites reports both custom domains, their providers and their HTTPS certificates as active. `https://workslikeus.com/en`, `https://workslikeus.com/se`, `https://workslikeus.ai/en` and `https://workslikeus.ai/se` each returned HTTP 200 with the correct language title and heading; each domain root redirected to `/en`. The live English journey was also read through in a browser, and the primary action, enquiry fields, privacy notice and Yusuf Young AB footer were present.
 
 ### Reasonable inferences used for the initial website
 
@@ -76,7 +76,7 @@ Reviewed on 25 August 2026. These sources inform the website hypothesis; they ar
 - Aaron Levie has argued on X that companies should build the software that expresses a core competency and rent the undifferentiated remainder. He has separately warned that rapidly improving frontier models can make custom scaffolding obsolete. Together these points challenge an indiscriminate “build everything yourself” pitch and support the site's narrower claim: use strong general models where helpful while owning the company-specific context, workflow, evaluations and learning—and train weights where that creates a real advantage. Sources: [Aaron Levie on core competencies](https://x.com/levie/status/2012353041782263965) and [Aaron Levie on changing agent architecture, reposted by Dharmesh Shah](https://x.com/dharmesh/status/2040085435821543459).
 - Public reactions to Karp's interview split between support for sovereign, controlled AI and criticism that his claims were self-serving or too broad. The site therefore does not repeat claims that frontier providers steal customer data or that every company must immediately train a model. It converts the controversy into questions a buyer can verify for each system: providers, permissions, retention, regions, audit records, model portability and ownership.
 
-## Material decisions still requiring Yusuf
+## Launch decision and remaining validation gap
 
-- Fresh approval to buy `workslikeus.com` and `workslikeus.ai` for the listed USD 170.46 subtotal, plus any tax Cloudflare applies before payment.
-- Yusuf approved the site for launch on 25 August 2026. He then asked for the complete English and Swedish journeys to be rewritten in plain, direct language before publication. The launch approval still stands; the rewritten version must pass the same private verification before the domain purchase proceeds.
+- Yusuf approved the site for launch on 25 August 2026, approved buying both Works Like Us domains on 26 August 2026, and asked that GoDaddy be used because most of his other domains are there.
+- The site is public on both domains. Real visitor response, qualified enquiries and conversion remain unvalidated.

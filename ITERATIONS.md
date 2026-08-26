@@ -106,3 +106,9 @@ Yusuf approved the rewritten site and asked to buy both domains through GoDaddy.
 Both new domains inherited the GoDaddy account's old SiteGround nameserver default. Because neither domain had an existing website or email setup to preserve, both were switched to GoDaddy DNS. Each zone now contains the two exact Sites A records and the required ownership and certificate TXT records. Sites reports both domains, their routing and their HTTPS certificates as active.
 
 The owner-only access rule was changed to public after Yusuf's launch approval. The English and Swedish pages return HTTP 200 on both domains, and each root redirects to `/en`. The live browser check confirmed the correct English and Swedish titles and headings, the enquiry action and fields, the privacy notice and the Yusuf Young AB footer. The earlier private end-to-end enquiry proved that the submission reaches durable storage; no second synthetic enquiry was added during the domain launch. The website is technically live, but no real buyer has yet validated the positioning or submitted a qualified enquiry.
+
+## Round 13 — use one public address
+
+Yusuf chose `workslikeus.com` as the single public address and asked for `workslikeus.ai` to redirect permanently. The `.com` is easier to remember and is already the canonical address in the site's metadata.
+
+The site now checks the requested domain before serving a page. Requests for `workslikeus.ai` receive an HTTP 301 redirect to the same path and query on `workslikeus.com`; requests for the `.com` continue normally. A local production build and server check confirmed that `/se?source=test` redirects to `https://workslikeus.com/se?source=test`, while `https://workslikeus.com/en` continues to serve the page. Production verification remains required after publication.

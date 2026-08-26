@@ -111,4 +111,6 @@ The owner-only access rule was changed to public after Yusuf's launch approval. 
 
 Yusuf chose `workslikeus.com` as the single public address and asked for `workslikeus.ai` to redirect permanently. The `.com` is easier to remember and is already the canonical address in the site's metadata.
 
-The site now checks the requested domain before serving a page. Requests for `workslikeus.ai` receive an HTTP 301 redirect to the same path and query on `workslikeus.com`; requests for the `.com` continue normally. A local production build and server check confirmed that `/se?source=test` redirects to `https://workslikeus.com/se?source=test`, while `https://workslikeus.com/en` continues to serve the page. Production verification remains required after publication.
+The site now checks the requested domain before serving a page. Requests for `workslikeus.ai` receive an HTTP 301 redirect to the same path and query on `workslikeus.com`; requests for the `.com` continue normally. A local production build and server check confirmed that `/se?source=test` redirects to `https://workslikeus.com/se?source=test`, while `https://workslikeus.com/en` continues to serve the page.
+
+The seventh version was then published. Production checks confirmed HTTP 301 from the `.ai` English page, Swedish page with a query and root to the matching `.com` addresses. The `.com` English and Swedish pages continued to return HTTP 200, and its root continued to send visitors to `/en`.

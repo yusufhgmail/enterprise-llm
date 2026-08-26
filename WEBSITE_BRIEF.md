@@ -31,7 +31,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - Relevant roles: managing director or operations leader, technical leader, security or legal reviewer, and the people who will use the first system.
 - Primary visitor action: submit enough information for Works Like Us to propose the first company-specific AI system worth testing.
 - Languages: complete English and Swedish journeys at `/en` and `/se`.
-- Publication: the public v1 is live on `workslikeus.com`; `workslikeus.ai` routes to the same English and Swedish site.
+- Publication: the public v1 is live on `workslikeus.com`; `workslikeus.ai` permanently redirects to the matching page on `.com`.
 - Scope: explain the business as a real offer without inventing customers, outcomes, certifications, model ownership, delivery capacity or commercial terms that do not yet exist.
 
 ## Truth inventory
@@ -48,6 +48,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - The business does not yet have verified Works Like Us customers, case studies, testimonials, performance results, certifications, a settled price list or a proven commercial model.
 - The owner-only sixth preview was verified on 25 August 2026 after the complete plain-language rewrite. English and Swedish rendered correctly at 1440×1000 and 390×844. The new headings, calls to action, company-system diagram and form labels remained legible without horizontal overflow. Both language switches and both enquiry links led to the right place, every required form field remained present, and Yusuf Young AB appeared in the footer and enquiry notice. The enquiry storage path had already been proven end to end in an earlier private deployment; this revision changed its wording, not its submission logic.
 - The sixth version was made public on 26 August 2026. GoDaddy DNS for both domains points to the two Sites apex addresses and contains the required ownership and certificate records. Sites reports both custom domains, their providers and their HTTPS certificates as active. `https://workslikeus.com/en`, `https://workslikeus.com/se`, `https://workslikeus.ai/en` and `https://workslikeus.ai/se` each returned HTTP 200 with the correct language title and heading; each domain root redirected to `/en`. The live English journey was also read through in a browser, and the primary action, enquiry fields, privacy notice and Yusuf Young AB footer were present.
+- On 26 August 2026, Yusuf chose `workslikeus.com` as the single public address. The seventh version returns HTTP 301 for `workslikeus.ai` and sends visitors to the same path and query on `workslikeus.com`. Production checks confirmed `/en`, `/se?source=redirect-check` and the root redirect correctly, while the English and Swedish `.com` pages continued to return HTTP 200.
 
 ### Reasonable inferences used for the initial website
 
@@ -79,4 +80,4 @@ Reviewed on 25 August 2026. These sources inform the website hypothesis; they ar
 ## Launch decision and remaining validation gap
 
 - Yusuf approved the site for launch on 25 August 2026, approved buying both Works Like Us domains on 26 August 2026, and asked that GoDaddy be used because most of his other domains are there.
-- The site is public on both domains. Real visitor response, qualified enquiries and conversion remain unvalidated.
+- The site is public at `workslikeus.com`, with `workslikeus.ai` kept as a permanent redirect. Real visitor response, qualified enquiries and conversion remain unvalidated.

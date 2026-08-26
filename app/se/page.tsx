@@ -158,7 +158,7 @@ export default function SwedishHome() {
         <div className="faq-list">
           <details open><summary>Varför inte bara använda ChatGPT, Copilot eller ett annat färdigt verktyg?</summary><p>Använd dem när de redan löser problemet. Vi bygger något eget när AI måste använda er kunskap, följa era regler, arbeta i era system eller ge er mer kontroll över känslig data.</p></details>
           <details><summary>Måste vi träna vår egen AI-modell?</summary><p>Nej. Vi börjar oftast med en befintlig modell. Om en mindre modell tränad för en uppgift skulle fungera bättre eller ge er mer kontroll kan vi lägga till den senare.</p></details>
-          <details><summary>Kommer ni att ersätta vårt CRM eller andra viktiga system?</summary><p>Vanligtvis inte. Vi kan koppla AI-systemet till HubSpot, Salesforce, Pipedrive eller andra program ni redan använder. Ett byte är ett separat beslut.</p></details>
+          <details><summary>Kommer ni att ersätta vårt CRM eller andra viktiga system?</summary><p>Vanligtvis inte. Vi kopplar AI-systemet till de program ni redan använder. Om ert CRM behöver bytas ut bygger vårt systerbolag <a href="https://companynative.com/se" target="_blank" rel="noreferrer">Company Native</a> CRM-system kring hur ert företag faktiskt arbetar.</p></details>
           <details><summary>Vart går vår data?</summary><p>Det bestämmer vi tillsammans innan vi bygger. Vi bestämmer var data behandlas, vilka AI-tjänster som får se den, vem som har åtkomst, hur länge den sparas och vilka händelser som ska sparas.</p></details>
         </div>
       </section>

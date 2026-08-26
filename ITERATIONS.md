@@ -114,3 +114,9 @@ Yusuf chose `workslikeus.com` as the single public address and asked for `worksl
 The site now checks the requested domain before serving a page. Requests for `workslikeus.ai` receive an HTTP 301 redirect to the same path and query on `workslikeus.com`; requests for the `.com` continue normally. A local production build and server check confirmed that `/se?source=test` redirects to `https://workslikeus.com/se?source=test`, while `https://workslikeus.com/en` continues to serve the page.
 
 The seventh version was then published. Production checks confirmed HTTP 301 from the `.ai` English page, Swedish page with a query and root to the matching `.com` addresses. The `.com` English and Swedish pages continued to return HTTP 200, and its root continued to send visitors to `/en`.
+
+## Round 14 — send CRM replacement work to Company Native
+
+The CRM question previously said only that replacing a main system was a separate decision. Yusuf clarified that this work belongs to the sister company, Company Native.
+
+The English and Swedish answers now make the boundary clear: Works Like Us connects AI to the software a company already uses, while Company Native can replace the CRM when that is the real need. Each language links directly to the matching Company Native page. Both destinations returned HTTP 200, and the Works Like Us production build and local rendered pages preserved the wording, links and `.ai` domain redirect.

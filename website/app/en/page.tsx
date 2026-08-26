@@ -216,7 +216,7 @@ export default function EnglishHome() {
         <div className="faq-list">
           <details open><summary>Why not just use ChatGPT, Copilot or another ready-made tool?</summary><p>Use them when they already solve the problem. We build something custom when AI must use your knowledge, follow your rules, work inside your systems or keep sensitive data under tighter control.</p></details>
           <details><summary>Do we need to train our own AI model?</summary><p>No. We usually start with an existing model. If a smaller model trained for one task would work better or give you more control, we can add that later.</p></details>
-          <details><summary>Will you replace our CRM or other main systems?</summary><p>Usually not. We can connect the AI system to HubSpot, Salesforce, Pipedrive or other software you already use. Replacing a system is a separate decision.</p></details>
+          <details><summary>Will you replace our CRM or other main systems?</summary><p>Usually not. We connect the AI system to the software you already use. If your CRM needs to be replaced, our sister company, <a href="https://companynative.com/en" target="_blank" rel="noreferrer">Company Native</a>, builds CRMs around how your company actually works.</p></details>
           <details><summary>Where does our data go?</summary><p>We decide that together before we build. We agree where data is processed, which AI services may see it, who can access it, how long it is kept and which records are saved.</p></details>
         </div>
       </section>

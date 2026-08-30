@@ -21,15 +21,12 @@ This is one of three separate businesses under Yusuf Young AB, all sharing a sov
 
 - **Company Native** (companynative.com) - Migrates companies from generic rented software to custom software they own. Different process and a broader software category. See: https://github.com/yusufhgmail/custom-software-migration
 
-- **Custom Software Migration** (concept, no brand yet) - Migrates companies from existing SaaS to custom-built software. Different process (migration vs fine-tuning), heavier consultancy, not model-specific. Not yet launched.
-
 ## Why These Are Separate
 
 Each business compounds a different repeatable process:
 - Works Like Us gets better at **fine-tuning models** with every customer (detecting proprietary processes, deploying feedback loops, hosting economics)
 - CRM From Within gets better at **building CRMs** with every customer
 - Company Native gets better at **migrating software systems** with every customer
-- Migration gets better at **migrating systems** with every customer
 
 Combining them into one company would create a generic "sovereign AI consultancy" with no compounding specialization. The moat in each case is the repeatable process, and you can only compound one process at a time.
 

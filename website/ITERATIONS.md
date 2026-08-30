@@ -191,3 +191,7 @@ The customer score is held back by the absence of a Works Like Us delivery, case
 The English desktop and English and Swedish 390×844 journeys were checked after the revision. Both mobile pages remained exactly 390 pixels wide with no horizontal overflow. The headline, literal service description and primary action appear in the first mobile viewport after fonts settle; the three-risk sequence and evidence cards collapse to one readable column. The production build, lint and React review found no issue. Yusuf gave standing authorization on 30 August 2026 to publish future verified Works Like Us improvements without asking again.
 
 The ninth version was published under that authorization. Production checks confirmed that the English and Swedish pages return HTTP 200 with the revised headline and evidence, while the `.ai` English page still redirects once to the matching `.com` address. The live browser also showed the revised English page on `workslikeus.com`.
+
+## Round 18 — route CRM work to CRM From Within
+
+Yusuf approved the final three-business naming split on 30 August 2026: Works Like Us for company-trained AI, CRM From Within for the CRM business and Company Native for migration from generic SaaS to company-owned software. The English and Swedish CRM answers now link to `crmfromwithin.com` and name CRM From Within. The older Company Native wording in Round 14 remains as history and is superseded by this decision.

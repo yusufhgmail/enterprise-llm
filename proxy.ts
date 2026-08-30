@@ -1,7 +1,11 @@
 import { type NextRequest, NextResponse } from 'next/server';
 
 const CANONICAL_HOST = 'workslikeus.com';
-const REDIRECT_HOSTS = new Set(['workslikeus.ai', 'www.workslikeus.ai']);
+const REDIRECT_HOSTS = new Set([
+  'www.workslikeus.com',
+  'workslikeus.ai',
+  'www.workslikeus.ai',
+]);
 
 export function proxy(request: NextRequest) {
   const requestHost = (request.headers.get('host') ?? request.nextUrl.hostname)

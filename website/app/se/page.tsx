@@ -2,15 +2,15 @@ import LeadForm from '../components/LeadForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Works Like Us — AI som fungerar på ert sätt',
-  description: 'Vi bygger AI-system kring ert företags kunskap, regler och verktyg. Börja med en del av verksamheten och behåll kontrollen över er data och det systemet lär sig.',
+  title: 'Works Like Us — Ert företags egen privata AI',
+  description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
   alternates: {
     canonical: '/se',
     languages: { en: '/en', sv: '/se' },
   },
   openGraph: {
-    title: 'Works Like Us — AI som fungerar på ert sätt',
-    description: 'Vi bygger AI-system kring ert företags kunskap, regler och verktyg. Börja med en del av verksamheten och behåll kontrollen över er data och det systemet lär sig.',
+    title: 'Works Like Us — Ert företags egen privata AI',
+    description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
     url: '/se',
     siteName: 'Works Like Us',
     locale: 'sv_SE',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Works Like Us — AI som fungerar på ert sätt',
-    description: 'Vi bygger AI-system kring ert företags kunskap, regler och verktyg. Börja med en del av verksamheten och behåll kontrollen över er data och det systemet lär sig.',
+    title: 'Works Like Us — Ert företags egen privata AI',
+    description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
     images: ['/og.png'],
   },
 };
@@ -28,26 +28,38 @@ export const metadata: Metadata = {
 const systems = [
   {
     number: '01',
-    title: 'Hjälp säljarna att förbereda och följa upp',
-    text: 'Använd tidigare samtal, offerter och CRM-data för att hjälpa säljarna att förbereda möten, följa upp och skriva offerter.',
+    title: 'Använd AI för känsligt arbete',
+    text: 'Behåll godkänd data och modellkörning på era egna servrar eller i ert privata moln i stället för att skicka arbetet till en publik assistent.',
   },
   {
     number: '02',
-    title: 'Ge supporten bättre svar',
-    text: 'Ge svar från era produkter, regler och lösta ärenden. Visa källan och lämna över till en person när det behövs.',
+    title: 'Slå generisk AI i utvalda företagsuppgifter',
+    text: 'Finjustera den med godkända exempel på era produkter, ert språk, era beslut och krav och jämför sedan med det bästa tillåtna alternativet.',
   },
   {
     number: '03',
-    title: 'Gör återkommande beslut mer enhetliga',
-    text: 'Gör era mest erfarna medarbetares sätt att fatta beslut till tydliga regler som teamet kan använda och förbättra.',
+    title: 'Behåll en företagsfördel som växer',
+    text: 'Den tränade modellen, minnet, utvärderingarna och rättelserna blir en företagstillgång som består när grundmodeller eller leverantörer förändras.',
+  },
+  {
+    number: '04',
+    title: 'Skapa mjukvara konkurrenterna inte kan hyra',
+    text: 'Bygg agenter, arbetsflöden och applikationer kring den kunskap och bedömningsförmåga som gör ert företag annorlunda.',
   },
 ];
 
 const controls = [
-  'Vilken företagsdata systemet får använda',
-  'Vad det får göra på egen hand',
-  'Vilka AI-modeller och externa tjänster det använder',
-  'Var det körs och hur ni kan byta senare',
+  'Den driftsatta modellen och företagsspecifika träningen',
+  'Det godkända minnet, reglerna och utvärderingarna',
+  'Agentlogiken och kopplingarna till era system',
+  'Friheten att flytta företagslagret senare',
+];
+
+const visionStages = [
+  { number: '01', label: 'ÄG', title: 'En privat företagsmodell', text: 'En öppen modell som körs i infrastruktur ni kontrollerar.' },
+  { number: '02', label: 'LÄR', title: 'Intelligens som växer', text: 'Godkänd kunskap, beslut, rättelser och utvärderingar förbättrar den.' },
+  { number: '03', label: 'AGERA', title: 'Agenter och arbetsflöden', text: 'Modellen arbetar i verktygen och processerna som driver företaget.' },
+  { number: '04', label: 'ERSÄTT', title: 'Skräddarsydd AI-mjukvara', text: 'Generisk SaaS ersätts där mjukvara byggd för ett företag skapar en verklig fördel.' },
 ];
 
 export default function SwedishHome() {
@@ -58,113 +70,144 @@ export default function SwedishHome() {
           <span className="brand-mark" aria-hidden="true">W</span><span>Works Like Us</span>
         </a>
         <nav aria-label="Huvudmeny">
-          <a href="#work">Vad vi bygger</a><a href="#approach">Så fungerar det</a><a href="#privacy">Integritet</a>
+          <a href="#value">Varför äga den</a><a href="#approach">Vad vi levererar</a><a href="#vision">Visionen</a><a href="#privacy">Integritet</a>
           <a href="/en" className="language-link" aria-label="Switch to English">EN</a>
-          <a href="#contact" className="nav-cta">Berätta vad ni vill förbättra</a>
+          <a href="#contact" className="nav-cta">Utforska en privat driftsättning</a>
         </nav>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">AI byggd kring ert företag</p>
-          <h1>Bygg AI som fungerar på ert sätt.</h1>
-          <p className="hero-lede">Vi använder er kunskap, era regler och era verktyg för att bygga AI för en verklig del av verksamheten. Börja med ett problem. Testa i det dagliga arbetet. Behåll kontrollen över er data och det systemet lär sig.</p>
+          <p className="eyebrow">Privat företags-AI · Under utveckling</p>
+          <h1>Äg AI:n som tränats för ert företag.</h1>
+          <p className="hero-lede">Works Like Us tar en öppen modell, tränar den på godkända exempel på hur ert företag kommunicerar och fattar beslut, kopplar den till era verktyg och kör den på hårdvara eller i ett privat moln ni kontrollerar. Målet är att slå generisk AI i utvalda företagsuppgifter utan att skicka arbetet – eller den intelligens ni bygger – till en publik leverantör.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#contact">Berätta vad ni vill förbättra <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#approach">Se hur vi börjar <span aria-hidden="true">↓</span></a>
+            <a className="button button-primary" href="#contact">Utforska ert första privata AI-system <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="#why">Se vad ert företag äger <span aria-hidden="true">↓</span></a>
           </div>
           <div className="trust-line" aria-label="Våra principer">
-            <span>Fungerar med verktygen ni redan använder</span><span>Ni behåller kontrollen över er data</span><span>Människor godkänner viktiga åtgärder</span>
+            <span>Känsligt arbete stannar inom den gräns ni väljer</span><span>Ni kontrollerar modellen, minnet och arbetsflödena</span><span>Ert företags omdöme kan finnas i modellen</span>
           </div>
         </div>
 
-        <div className="system-map" aria-label="Företagets kunskap och regler styr ett AI-system som hjälper till i det dagliga arbetet">
-          <div className="map-label">Så fungerar ert system</div>
-          <div className="map-row map-row-data"><span className="map-index">UNDERLAG</span><strong>Det ert företag vet</strong><small>dokument · CRM · tidigare beslut</small></div>
-          <div className="map-connector"><span>ordna + skydda</span></div>
-          <div className="map-row map-row-core"><span className="map-index">AI</span><strong>Ert AI-system</strong><small>AI-modell · företagsregler · kontroller</small></div>
-          <div className="map-connector"><span>använd i arbetet</span></div>
-          <div className="map-row map-row-output"><span className="map-index">RESULTAT</span><strong>Bättre arbete</strong><small>försäljning · support · drift</small></div>
-          <div className="learning-loop"><span className="pulse" aria-hidden="true" /><span>Era rättelser hjälper systemet att bli bättre.</span></div>
+        <div className="system-map" aria-label="En öppen modell blir privat företagsintelligens som driver assistenter, agenter och skräddarsydd mjukvara">
+          <div className="map-label">Inom er kontrollerade miljö</div>
+          <div className="map-row map-row-data"><span className="map-index">GRUND</span><strong>En öppen modell ni kan behålla</strong><small>öppna vikter · inget beroende av en modell</small></div>
+          <div className="map-connector"><span>träna + styr</span></div>
+          <div className="map-row map-row-core"><span className="map-index">ERT</span><strong>Ert företag inbyggt i modellen</strong><small>tränat omdöme · minne · regler</small></div>
+          <div className="map-connector"><span>koppla + agera</span></div>
+          <div className="map-row map-row-output"><span className="map-index">ANVÄND</span><strong>Er privata AI</strong><small>assistenter · agenter · skräddarsydd mjukvara</small></div>
+          <div className="learning-loop"><span className="pulse" aria-hidden="true" /><span>Varje godkänd rättelse kan förbättra det ert företag äger.</span></div>
         </div>
       </section>
 
       <section className="thesis-band" aria-label="Vår utgångspunkt">
-        <p>Alla kan använda samma AI-modeller.</p>
-        <strong>Er fördel är att lära AI hur ert företag arbetar—och behålla den kunskapen.</strong>
+        <p>Allmän AI blir något alla företag kan köpa.</p>
+        <strong>Er fördel börjar när sättet ert företag arbetar på – besluten, språket och kunskapen – tränas in i en modell ni kontrollerar.</strong>
       </section>
 
-      <section className="section work-section" id="work">
+      <section className="fit-strip" aria-label="Vilka företag det passar bäst">
+        <span>Passar bäst</span><strong>Minst 100 anställda</strong><strong>Publik AI är begränsad</strong><strong>Känsligt eller unikt arbete</strong><strong>Börjar med svenska företag</strong>
+      </section>
+
+      <section className="section work-section" id="value">
         <div className="section-heading">
-          <p className="eyebrow">Vad vi bygger</p><h2>Börja där AI kan få en del av verksamheten att fungera bättre.</h2>
-          <p>Vi letar efter arbete som går långsamt, blir ojämnt eller beror på några få erfarna personer. Det första systemet ska spara tid, sänka kostnader, öka intäkter eller minska risk.</p>
+          <p className="eyebrow">Varför företag vill ha en egen AI</p><h2>Använd AI i privat arbete, gör den bättre på ert företag och behåll det den lär sig.</h2>
+          <p>En företagsägd modell låter människor använda känslig kunskap inom en bestämd gräns. Träning på godkända företagsexempel kan lära den återkommande mönster som inte ryms i ett styrdokument eller en prompt. Den första driftsättningen måste visa att detta förbättrar ett verkligt arbete.</p>
         </div>
         <div className="system-cards">{systems.map((system) => <article className="system-card" key={system.number}><span>{system.number}</span><h3>{system.title}</h3><p>{system.text}</p></article>)}</div>
-        <div className="stack-line"><span>Vi arbetar med verktygen ni redan använder</span><strong>HubSpot</strong><strong>Salesforce</strong><strong>Pipedrive</strong><strong>Microsoft 365</strong><strong>Era egna system</strong></div>
+        <div className="stack-line"><span>Koppla verktygen ni redan använder</span><strong>Microsoft 365</strong><strong>Google Workspace</strong><strong>HubSpot</strong><strong>Salesforce</strong><strong>Era egna system</strong></div>
       </section>
 
       <section className="section split-section" id="approach">
         <div className="split-copy">
-          <p className="eyebrow">Så börjar vi</p><h2>Bygg ett litet system. Testa det i verkligt arbete. Bestäm sedan om ni ska bygga vidare.</h2>
-          <p>Ni behöver inte träna en stor AI-modell från grunden. Vi kan börja med en ledande modell och lägga till er kunskap, era regler och kontroller. De delarna behåller ni, och ni kan byta modell senare.</p>
+          <p className="eyebrow">Vad Works Like Us levererar</p><h2>En praktisk tjänst som bygger, driftsätter och underhåller ert företags egen LLM.</h2>
+          <p>Det här är inte ännu en programlicens. Vi börjar med en öppen modell, kör den på er hårdvara eller i ert privata moln, tränar och anpassar den med godkänd företagsdata och kopplar den sedan till ett arbete där resultatet spelar roll.</p>
           <ol className="steps">
-            <li><span>01</span><div><strong>Välj problemet</strong><p>Välj en del av verksamheten där ett bättre resultat kan mätas.</p></div></li>
-            <li><span>02</span><div><strong>Bygg en fungerande version</strong><p>Koppla bara in den data och de verktyg som behövs. Bestäm vilka åtgärder en person måste godkänna.</p></div></li>
-            <li><span>03</span><div><strong>Testa med teamet</strong><p>Mät resultatet, rätta det som inte fungerar och bygg vidare bara om systemet fungerar.</p></div></li>
+            <li><span>01</span><div><strong>Välj gränsen och arbetet</strong><p>Bestäm den känsliga datan, vilka som får använda den och ett resultat som är värt att förbättra.</p></div></li>
+            <li><span>02</span><div><strong>Driftsätt den privata modellen</strong><p>Sätt upp en modell med öppna vikter i infrastruktur ert företag kontrollerar.</p></div></li>
+            <li><span>03</span><div><strong>Träna den på hur ert företag arbetar</strong><p>Använd godkända exempel, beslut och återkoppling för att finjustera modellen och lägg sedan till det minne, de regler och verktyg som arbetet kräver.</p></div></li>
+            <li><span>04</span><div><strong>Driv, mät och förbättra</strong><p>Låt teamet använda den, registrera fel och bygg vidare bara när den ger ett värdefullt resultat.</p></div></li>
           </ol>
         </div>
         <aside className="control-card">
-          <div className="control-card-top"><span>BESTÄMS INNAN VI BYGGER</span><span className="status-dot">Skrivs ner först</span></div>
-          <h3>Ni bestämmer:</h3><ul>{controls.map((control) => <li key={control}>{control}</li>)}</ul>
-          <p className="control-note">Vi bestämmer också vem som får använda systemet, hur länge data sparas och vilka händelser som ska sparas.</p>
+          <div className="control-card-top"><span>FÖRETAGSLAGRET</span><span className="status-dot">Byggt för att kunna flyttas</span></div>
+          <h3>Intelligensen stannar hos er.</h3><ul>{controls.map((control) => <li key={control}>{control}</li>)}</ul>
+          <p className="control-note">Det exakta avtalet bestämmer ägande och flyttbarhet. Externa AI-tjänster används bara när ert företag uttryckligen godkänner dem.</p>
         </aside>
       </section>
 
       <section className="section privacy-section" id="privacy">
         <div className="privacy-heading">
-          <p className="eyebrow">Integritet</p>
-          <h2>Bestäm vart er data går innan systemet använder den.</h2>
-          <p>Vi bestämmer vilken data som behövs, vem som får se den, var den får behandlas och vilka åtgärder som kräver godkännande.</p>
+          <p className="eyebrow">Privat genom arkitekturen</p>
+          <h2>Använd AI utan att skicka känsligt arbete till ChatGPT.</h2>
+          <p>En privat driftsättning kan hålla modellen och företagsdatan i er egen infrastruktur. Om en extern tjänst skulle förbättra en uppgift är användningen valfri, begränsad och överenskommen – aldrig dold i systemet.</p>
         </div>
         <div className="privacy-controls">
-          <article><span>01</span><div><h3>Välj var det körs</h3><p>Använd ert moln, en privat lösning eller en annan godkänd tjänst. Valet beror på datan och arbetet.</p></div></article>
-          <article><span>02</span><div><h3>Skicka bara det som behövs</h3><p>Vi begränsar vad externa AI-tjänster får se. Vi bestämmer också hur länge data sparas och var den behandlas.</p></div></article>
-          <article><span>03</span><div><h3>Begränsa vem som får agera</h3><p>Människor och system får bara den åtkomst de behöver. Viktiga åtgärder kan vänta på en namngiven person.</p></div></article>
-          <article><span>04</span><div><h3>Se vad som hände</h3><p>Spara de frågor, svar, åtgärder och rättelser som behövs för att granska vad som hände.</p></div></article>
+          <article><span>01</span><div><h3>Kör den där ni har kontroll</h3><p>Driftsätt på företagets hårdvara eller i ett privat molnkonto som valts för den verkliga datan och uppgiften.</p></div></article>
+          <article><span>02</span><div><h3>Använd en modell ni kan behålla</h3><p>Börja med öppna vikter så att kärnsystemet inte försvinner när en modellleverantör ändrar tillgång, pris eller regler.</p></div></article>
+          <article><span>03</span><div><h3>Ge varje person bara den åtkomst som behövs</h3><p>Företagets behörigheter styr vem som får använda vilken kunskap och vilka åtgärder som fortfarande kräver en namngiven person.</p></div></article>
+          <article><span>04</span><div><h3>Registrera vad AI:n lär sig</h3><p>Behåll de utvärderingar, rättelser och händelser som behövs för att granska och medvetet förbättra systemet.</p></div></article>
         </div>
       </section>
 
       <section className="section ownership-section" id="why">
-        <div className="section-heading"><p className="eyebrow">Varför bygga ett eget system</p><h2>Era konkurrenter kan använda samma AI-modeller. De har inte ert företags kunskap.</h2><p>Vi börjar med den bästa modellen för jobbet. Vi lägger till er kunskap, era regler, exempel och återkoppling. Om det hjälper kan vi senare träna en modell för en av era uppgifter. Ni behåller de delar som får systemet att fungera för ert företag.</p></div>
+        <div className="section-heading"><p className="eyebrow">Det strategiska valet</p><h2>Hyr samma intelligens som alla andra – eller bygg en fördel ert företag behåller.</h2><p>Publik AI är användbar för allmänt arbete. Risken börjar när en leverantörs modell blir platsen där er känsliga kontext, verksamhetskunskap och samlade lärande finns.</p></div>
         <div className="ownership-grid">
-          <article><span>Generell AI</span><h3>Ett allmänt verktyg som alla kan använda</h3><ul><li>Samma allmänna kunskap</li><li>Byggt för många olika företag</li><li>Er anpassning kan bli låst i ett verktyg</li></ul></article>
-          <article className="owned-column"><span>Ert AI-system</span><h3>AI byggd för sättet ert företag arbetar</h3><ul><li>Använder företagets egen kunskap</li><li>Följer era regler och godkännanden</li><li>Ni behåller era exempel, rättelser och tester</li></ul></article>
+          <article><span>Hyr publik AI</span><h3>Leverantören styr intelligensen ni blir beroende av.</h3><ul><li>Leverantören väljer modell, pris och tillgång</li><li>Känslig kontext kan passera er valda gräns</li><li>Konkurrenterna kan hyra samma allmänna förmåga</li><li>Ett leverantörsbyte kan kräva att företagslagret byggs om</li></ul></article>
+          <article className="owned-column"><span>Äg företagets AI</span><h3>Ert företag styr intelligensen det skapar.</h3><ul><li>Ni väljer modellen och var den körs</li><li>Godkänd data och modellkörning kan stanna inom er gräns</li><li>Mönster från era beslut och exempel kan tränas in i vikter ni kontrollerar</li><li>Företagslagret kan bestå när grundmodellen byts</li></ul></article>
         </div>
       </section>
 
       <section className="first-system-section">
-        <div><p className="eyebrow">Det första projektet</p><h2>Testa ett användbart system innan ni gör en stor satsning.</h2></div>
-        <ol><li><span>Först</span><strong>Bestäm uppgiften och resultatet</strong></li><li><span>Sedan</span><strong>Bygg med en liten, godkänd mängd företagsdata</strong></li><li><span>Före nästa steg</span><strong>Låt teamet använda det. Fortsätt bara om det fungerar.</strong></li></ol>
+        <div><p className="eyebrow">Den första driftsättningen</p><h2>Börja med ett arbete som är värt att hålla privat.</h2></div>
+        <ol><li><span>Välj</span><strong>Ett värdefullt arbetsflöde som publik AI inte kan hantera säkert eller tillförlitligt</strong></li><li><span>Bygg</span><strong>Den minsta privata modellen, datakopplingen och applikationen som behövs</strong></li><li><span>Bevisa</span><strong>En verklig förbättring innan mer data tränas eller fler arbetsflöden läggs till</strong></li></ol>
+      </section>
+
+      <section className="section vision-section" id="vision">
+        <div className="section-heading">
+          <p className="eyebrow">Enterprise LLM-visionen</p>
+          <h2>Börja med en privat modell. Sluta med mjukvara ingen konkurrent kan hyra.</h2>
+          <p>LLM:en blir företagets intelligenslager. Vi bygger minne, agenter, arbetsflöden och applikationer runt den. Med tiden kan ett företag ha flera specialistmodeller – för försäljning, juridik, support eller enskilda roller – och ersätta generisk mjukvara där företagstränad AI skapar en verklig fördel.</p>
+        </div>
+        <div className="vision-path">
+          {visionStages.map((stage) => (
+            <article key={stage.number}>
+              <div><span>{stage.number}</span><strong>{stage.label}</strong></div>
+              <h3>{stage.title}</h3>
+              <p>{stage.text}</p>
+            </article>
+          ))}
+        </div>
+        <div className="business-model-note">
+          <span>Så växer Works Like Us</span>
+          <p><strong>Börja med praktiska företagsdriftsättningar.</strong> Gör det återkommande arbetet – modellinstallation, träning, styrning, kopplingar och underhåll – till en återanvändbar plattform. Kunddata hålls åtskild; driftsättningsmetoden blir bättre.</p>
+        </div>
       </section>
 
       <section className="section founder-section">
         <div className="founder-kicker">Varför Works Like Us</div>
-        <blockquote>“De flesta företag behöver inte ännu en AI-demo. De behöver ett användbart system som passar arbetet och blir bättre när medarbetarna rättar det.”</blockquote>
-        <div className="founder-note"><strong>Yusuf Young</strong><p>Yusuf grundade <a href="https://www.funnelbud.com/om-oss/" target="_blank" rel="noreferrer">FunnelBud</a>, ett svenskt CRM-företag som har hjälpt hundratals kunder. Innan dess byggde han HubSpot- och Salesforce-system. Han startade Works Like Us eftersom bra program ofta ger för lite värde när de inte passar det dagliga arbetet.</p></div>
+        <blockquote>“När allmän intelligens blir en handelsvara måste ett företag träna in sina egna processer, övertygelser och data i modeller det kontrollerar.”</blockquote>
+        <div className="founder-note"><strong>Yusuf Young</strong><p>Yusuf grundade <a href="https://www.funnelbud.com/om-oss/" target="_blank" rel="noreferrer">FunnelBud</a>, ett svenskt CRM-företag som har hjälpt hundratals kunder. Innan dess byggde han HubSpot- och Salesforce-system. Works Like Us är under utveckling och har ännu ingen slutförd kunddriftsättning.</p></div>
       </section>
 
       <section className="section faq-section">
         <div className="section-heading"><p className="eyebrow">Vanliga frågor</p><h2>Det här bör ni veta innan vi börjar.</h2></div>
         <div className="faq-list">
-          <details open><summary>Varför inte bara använda ChatGPT, Copilot eller ett annat färdigt verktyg?</summary><p>Använd dem när de redan löser problemet. Vi bygger något eget när AI måste använda er kunskap, följa era regler, arbeta i era system eller ge er mer kontroll över känslig data.</p></details>
-          <details><summary>Måste vi träna vår egen AI-modell?</summary><p>Nej. Vi börjar oftast med en befintlig modell. Om en mindre modell tränad för en uppgift skulle fungera bättre eller ge er mer kontroll kan vi lägga till den senare.</p></details>
-          <details><summary>Kommer ni att ersätta vårt CRM eller andra viktiga system?</summary><p>Vanligtvis inte. Vi kopplar AI-systemet till de program ni redan använder. Om ert CRM behöver bytas ut bygger vårt systerbolag <a href="https://companynative.com/se" target="_blank" rel="noreferrer">Company Native</a> CRM-system kring hur ert företag faktiskt arbetar.</p></details>
-          <details><summary>Vart går vår data?</summary><p>Det bestämmer vi tillsammans innan vi bygger. Vi bestämmer var data behandlas, vilka AI-tjänster som får se den, vem som har åtkomst, hur länge den sparas och vilka händelser som ska sparas.</p></details>
+          <details open><summary>Varför inte bara använda ChatGPT, Copilot eller ett annat färdigt verktyg?</summary><p>Använd publik AI för allmänt arbete när villkoren och kontrollerna passar. Bygg en egen när känslig data måste stanna inom er gräns, AI:n måste bli tydligt bättre på ert företag eller ett beroende av en leverantör skulle utsätta en central förmåga för risk.</p></details>
+          <details><summary>Kommer inte Microsoft eller Google att erbjuda det här?</summary><p>De kommer att fortsätta lägga till företagskontext och starkare integritetskontroller. Använd deras produkter när de löser arbetet. Works Like Us behövs bara där ert företag vill ha en modell tränad på sina egna beslut, driftsatt under egen kontroll och kapabel att bli mjukvara som är unik för företaget. Den första driftsättningen testar om den skillnaden är värd att äga.</p></details>
+          <details><summary>Är det här mjukvara eller konsultarbete?</summary><p>Det börjar som en praktisk tjänst. Works Like Us utformar, driftsätter och underhåller modellen och den första applikationen tillsammans med ert företag. Återkommande delar av arbetet kan bli en produkt över tid.</p></details>
+          <details><summary>Tränar vi en modell från grunden?</summary><p>Nej. Vi börjar med en modell med öppna vikter och finjusterar eller fortsätter träna den bara där godkänd företagsdata och mätbara resultat motiverar arbetet. Minne och sökning kan hantera kunskap som ska kunna ändras utan ny träning av vikterna.</p></details>
+          <details><summary>Måste den köras på hårdvara på kontoret?</summary><p>Nej. Den kan köras på företagets egna servrar eller i ett privat molnkonto som företaget kontrollerar. Poängen är att kärnmodellen, företagsdatan och lärandet inte behöver vara beroende av en publik AI-tjänst.</p></details>
+          <details><summary>Blir en privat modell lika bra som den bästa publika modellen?</summary><p>Inte på varje allmän uppgift. Tesens kärna är att en modell som tränats på ett företags egna exempel och återkoppling kan slå en generisk modell i utvalda företagsuppgifter. Vi jämför med det bästa tillåtna alternativet och bygger inte vidare om det uppmätta resultatet inte är tillräckligt mycket bättre för att spela roll.</p></details>
+          <details><summary>Vad kostar en första driftsättning?</summary><p>Det finns ännu inget fast offentligt pris. Hårdvara, dataförberedelse, träning, säkerhet och underhåll skiljer sig mellan företag. Det första samtalet definierar tillräckligt av arbetet och driftsättningsgränsen för att uppskatta kostnaden ärligt.</p></details>
+          <details><summary>Kommer ni att ersätta vårt CRM eller andra viktiga system?</summary><p>Vanligtvis inte i början. Vi kopplar den privata AI:n till de program ni redan använder. Om ert CRM behöver bytas ut bygger vårt systerbolag <a href="https://companynative.com/se" target="_blank" rel="noreferrer">Company Native</a> CRM-system kring hur ert företag faktiskt arbetar.</p></details>
+          <details><summary>Är Works Like Us redan i drift?</summary><p>Företaget är under utveckling. Det finns ännu inga slutförda Works Like Us-driftsättningar hos kunder. En förfrågan inleder en teknisk och affärsmässig diskussion; den lovar inte att det föreslagna systemet redan finns.</p></details>
         </div>
       </section>
 
       <section className="contact-section" id="contact">
-        <div><p className="eyebrow">Hitta det första nyttiga systemet</p><h2>Vilket arbete vill ni göra snabbare eller bättre?</h2><p>Berätta vad som går långsamt, upprepas, blir ojämnt eller beror på en enda person. Vi svarar med det första AI-system vi skulle testa och vilket resultat det ska förbättra.</p></div>
+        <div><p className="eyebrow">Utforska en första driftsättning</p><h2>Vilket arbete är för känsligt – eller för viktigt – för en publik AI?</h2><p>Berätta vad människor gör idag och vilken data som används. Vi svarar med det första privata AI-systemet vi skulle utforska, var det kan köras och vilket resultat som är värt att testa.</p></div>
         <LeadForm language="sv" />
       </section>
 

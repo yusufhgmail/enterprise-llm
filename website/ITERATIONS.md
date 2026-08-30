@@ -120,3 +120,43 @@ The seventh version was then published. Production checks confirmed HTTP 301 fro
 The CRM question previously said only that replacing a main system was a separate decision. Yusuf clarified that this work belongs to the sister company, Company Native.
 
 The English and Swedish answers now make the boundary clear: Works Like Us connects AI to the software a company already uses, while Company Native can replace the CRM when that is the real need. Each language links directly to the matching Company Native page. Both destinations returned HTTP 200, and the Works Like Us production build and local rendered pages preserved the wording, links and `.ai` domain redirect. The eighth version was published and the same wording and links were confirmed on both live `.com` pages; the `.ai` redirect still returned HTTP 301 to the matching `.com` address.
+
+## Round 15 — restore the Enterprise LLM proposition
+
+Yusuf found that the live page was understandable sentence by sentence but still left a cold visitor unable to say what Works Like Us actually was. The site had turned the original Enterprise LLM idea into a generic custom-AI consultancy: it led with knowledge, rules and workflows, treated private deployment as one choice and said company-specific model training might happen later.
+
+The governing source records now agree on a sharper proposition. The 2026 business-ideas sheet names the initial offer as a forward-deployed Enterprise LLM for companies with 100 or more employees that restrict public LLM use: deploy a local open-source model on company-controlled infrastructure, fine-tune it on approved company data, charge for the first hands-on setup and productise the repeated work. The Hosted LLM and July 2026 market-opportunity documents add the wider vision: every company should have its own model, keep sensitive inference out of public AI services, accumulate company intelligence in weights and systems it controls, and build agents, workflows and eventually custom software around that model.
+
+The English and Swedish pages were rebuilt around that proposition while preserving the approved visual design and enquiry flow. The first viewport now says that Works Like Us builds a private company model, trains it on approved company knowledge, connects it to existing tools and runs it in infrastructure the company controls. The four benefits stay together near the top: use AI on sensitive work, make it better at the company, keep what it learns and build software competitors cannot rent. Later sections distinguish public rented AI from company-owned AI, explain the service-led first deployment, show the path from model to custom software and explain how repeated deployment work can become a platform. The page also states that Works Like Us is in development, has no completed customer deployment and has no settled public price.
+
+### Cold-review score after the final challenge pass
+
+The score covers the four things Yusuf asked the page to communicate: what it is, its value, its unique advantage and the desire to act because of the benefits or the risk of doing nothing. Each dimension is worth 2.5 points. This is an internal cold review of the rendered page, not customer or investor validation.
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.4 | 2.2 | 2.3 | 1.9 | **8.8/10** |
+| Investor | 2.3 | 2.1 | 2.3 | 1.8 | **8.5/10** |
+
+The customer score remains below 10 because there is no delivery proof, case study or fixed price. The investor score remains below 10 because there is no customer traction and the size of the initial restricted-public-AI segment is still untested. The final challenge pass added the missing Swedish entry point, made the service-to-platform path visible and answered whether a private model can match the best public model: not on every general task, so the first deployment must beat the best permitted alternative on one valuable company-specific job before expansion.
+
+The final local build and lint pass succeeded. The rendered English desktop journey and both 390×844 mobile journeys showed no horizontal overflow. English and Swedish retained the language switch, enquiry action and form labels, and every header link resolved to a real section below the sticky navigation. Publication is not included in this round; the public site remains on the earlier version until Yusuf approves the new public deployment.
+
+## Round 16 — make company-trained weights the unmistakable USP
+
+Yusuf supplied a second reading of the two Enterprise LLM documents. It clarified that privacy and provider independence are important benefits, but not the whole proposition. The harder claim—and the reason this could become more than a private-AI consultancy—is that recurring company judgment can be learned from approved decisions, language and examples and encoded in model weights the company controls. The hoped-for result is a lighter specialist model that beats generic AI on selected company work, while the accumulated training, evaluations, memory and applications become difficult for a competitor to copy.
+
+The opening now says **“Own the AI trained for your company.”** It explains the literal service in the next sentence: take an open model, train it on approved company examples, connect it to company tools and run it on controlled hardware or private cloud. The four near-top benefits now include beating generic AI on selected work and keeping a compounding company asset. The model diagram says that the company is encoded in the model, the deployment steps explicitly name fine-tuning, and the long-term vision allows several specialist models for different functions or roles.
+
+The stronger claim remains honest. The page describes outperforming generic AI as the aim and says the first deployment must compare the private model with the best permitted alternative on one real job. It does not promise that a private model wins at general tasks. A new question addresses the strongest strategic objection directly: Microsoft and Google will keep adding company context and privacy controls, so Works Like Us is useful only where company-trained weights, independent deployment and unique software create enough extra value to own.
+
+### Cold-review score after restoring the fine-tuning moat
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.5 | 2.3 | 2.4 | 1.9 | **9.1/10** |
+| Investor | 2.5 | 2.2 | 2.5 | 1.8 | **9.0/10** |
+
+The revised headline, literal service description, company-training mechanism and direct Microsoft/Google objection make the category, USP and strategic risk easier to repeat after one reading. The scores remain internal messaging reviews rather than real customer or investor evidence. Customers still lack delivery proof, a case study and settled commercial terms. Investors still lack customer traction and evidence that the initial Swedish segment is large enough.
+
+The final production build and lint checks succeeded. The revised English desktop hero keeps both actions in the first viewport. At 390×844, the English and Swedish headings, primary action and opening explanation remain legible with a 390-pixel document width and no horizontal overflow. Publication is still a separate step and has not occurred in this round.

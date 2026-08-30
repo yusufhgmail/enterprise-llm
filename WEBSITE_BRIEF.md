@@ -29,7 +29,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - Brand: **Works Like Us**.
 - Primary audience: enterprise and B2B SME decision-makers, with Swedish companies as the first market.
 - Relevant roles: managing director or operations leader, technical leader, security or legal reviewer, and the people who will use the first system.
-- Primary visitor action: submit enough information for Works Like Us to propose the first company-specific AI system worth testing.
+- Primary visitor action: describe the sensitive or strategically important work that could justify a first private company-AI deployment.
 - Languages: complete English and Swedish journeys at `/en` and `/se`.
 - Publication: the public v1 is live on `workslikeus.com`; `workslikeus.ai` permanently redirects to the matching page on `.com`.
 - Scope: explain the business as a real offer without inventing customers, outcomes, certifications, model ownership, delivery capacity or commercial terms that do not yet exist.
@@ -43,6 +43,7 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 - Yusuf bought `workslikeus.com` and `workslikeus.ai` through GoDaddy on 26 August 2026. `workslikeus.com` cost MXN229.99 for one year and renews in August 2027 for MXN399.99. `workslikeus.ai` cost MXN3,558.98 for the required two-year first term and renews in August 2028 for MXN5,423.39. GoDaddy charged MXN3.47 in tax and fees, for a total of MXN3,792.44.
 - An exact-name TMview search for **Works Like Us** returned no rows across its participating trademark offices on 24 August 2026. Exact-name public-web and Swedish-company-directory searches also surfaced no obvious conflicting AI business or Swedish company. This is only a preliminary collision screen: it does not establish that the company name is registrable, rule out similar marks or unindexed use, or replace professional trademark clearance.
 - The intended service is to build, deploy and maintain company-specific LLMs, agents, workflows and business systems.
+- On 30 August 2026, Yusuf asked that the website follow the Enterprise LLM source records rather than the more generic custom-AI presentation. The default proposition is now a private open-weight model deployed on company-controlled hardware or private cloud, trained or adapted with approved company data and used as the base for company-specific agents, workflows and software.
 - The website must address competitive advantage and privacy, serve English and Swedish visitors, and target enterprise buyers with Swedish companies first.
 - Yusuf founded FunnelBud after implementing HubSpot and Salesforce systems; that public operating background can support credibility. It is not evidence of completed Works Like Us projects.
 - The business does not yet have verified Works Like Us customers, case studies, testimonials, performance results, certifications, a settled price list or a proven commercial model.
@@ -54,16 +55,17 @@ In general, listen to Alex Karp’s interview and read reactions on X. Find disc
 
 - A buyer is more likely to engage around one costly or inconsistent workflow than around an abstract company-wide AI transformation.
 - The first engagement should therefore identify one business result, build with a controlled slice of real data, and let the people doing the work decide whether the system earned expansion.
-- Existing frontier models may still be useful components. The company’s durable advantage can include its own weights where justified, while also including the knowledge, decisions, workflows, evaluations, permissions and learning record built around any model.
+- An outside frontier model can still be an explicitly approved optional component, but it is not the default core. The default core is an open-weight model and company layer that can run without sending sensitive inference to a public AI service.
 - Buyers using HubSpot, Salesforce, Pipedrive or Microsoft 365 will usually prefer an AI system that initially works with those tools instead of requiring an immediate replacement.
 - Privacy claims are credible only when the deployment boundary, providers, access, retention, regions and audit trail are decided for the actual system.
 
 ### Untested hypotheses
 
 - Enterprise buyers will agree that relying only on generally available frontier intelligence makes their operations more interchangeable.
-- Owning or training company-specific model weights will be necessary often enough to be a central commercial proposition, rather than one implementation option among several.
-- “Build AI that works the way your company works” will create more qualified interest than leading with model ownership, efficiency or privacy alone.
-- A four-week first-system structure is commercially and operationally realistic.
+- Enough companies with 100 or more employees prohibit or materially restrict public LLM use to support an initial Swedish market.
+- Private open-weight deployments will perform well enough on valuable company-specific work to justify their added hardware, training, security and maintenance cost.
+- “Own the AI trained for your company” will create more qualified interest than the previous generic custom-workflow positioning.
+- Training recurring company judgment into model weights will improve selected company tasks enough to beat the best permitted generic alternative; this is the central product thesis, not yet a measured Works Like Us result.
 - A founder-led enquiry is the right initial conversion action.
 - The initial offer, price, delivery capacity and ongoing maintenance model remain unproven.
 

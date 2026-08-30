@@ -119,4 +119,73 @@ The seventh version was then published. Production checks confirmed HTTP 301 fro
 
 The CRM question previously said only that replacing a main system was a separate decision. Yusuf clarified that this work belongs to the sister company, Company Native.
 
-The English and Swedish answers now make the boundary clear: Works Like Us connects AI to the software a company already uses, while Company Native can replace the CRM when that is the real need. Each language links directly to the matching Company Native page. Both destinations returned HTTP 200, and the Works Like Us production build and local rendered pages preserved the wording, links and `.ai` domain redirect.
+The English and Swedish answers now make the boundary clear: Works Like Us connects AI to the software a company already uses, while Company Native can replace the CRM when that is the real need. Each language links directly to the matching Company Native page. Both destinations returned HTTP 200, and the Works Like Us production build and local rendered pages preserved the wording, links and `.ai` domain redirect. The eighth version was published and the same wording and links were confirmed on both live `.com` pages; the `.ai` redirect still returned HTTP 301 to the matching `.com` address.
+
+## Round 15 — restore the Enterprise LLM proposition
+
+Yusuf found that the live page was understandable sentence by sentence but still left a cold visitor unable to say what Works Like Us actually was. The site had turned the original Enterprise LLM idea into a generic custom-AI consultancy: it led with knowledge, rules and workflows, treated private deployment as one choice and said company-specific model training might happen later.
+
+The governing source records now agree on a sharper proposition. The 2026 business-ideas sheet names the initial offer as a forward-deployed Enterprise LLM for companies with 100 or more employees that restrict public LLM use: deploy a local open-source model on company-controlled infrastructure, fine-tune it on approved company data, charge for the first hands-on setup and productise the repeated work. The Hosted LLM and July 2026 market-opportunity documents add the wider vision: every company should have its own model, keep sensitive inference out of public AI services, accumulate company intelligence in weights and systems it controls, and build agents, workflows and eventually custom software around that model.
+
+The English and Swedish pages were rebuilt around that proposition while preserving the approved visual design and enquiry flow. The first viewport now says that Works Like Us builds a private company model, trains it on approved company knowledge, connects it to existing tools and runs it in infrastructure the company controls. The four benefits stay together near the top: use AI on sensitive work, make it better at the company, keep what it learns and build software competitors cannot rent. Later sections distinguish public rented AI from company-owned AI, explain the service-led first deployment, show the path from model to custom software and explain how repeated deployment work can become a platform. The page also states that Works Like Us is in development, has no completed customer deployment and has no settled public price.
+
+### Cold-review score after the final challenge pass
+
+The score covers the four things Yusuf asked the page to communicate: what it is, its value, its unique advantage and the desire to act because of the benefits or the risk of doing nothing. Each dimension is worth 2.5 points. This is an internal cold review of the rendered page, not customer or investor validation.
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.4 | 2.2 | 2.3 | 1.9 | **8.8/10** |
+| Investor | 2.3 | 2.1 | 2.3 | 1.8 | **8.5/10** |
+
+The customer score remains below 10 because there is no delivery proof, case study or fixed price. The investor score remains below 10 because there is no customer traction and the size of the initial restricted-public-AI segment is still untested. The final challenge pass added the missing Swedish entry point, made the service-to-platform path visible and answered whether a private model can match the best public model: not on every general task, so the first deployment must beat the best permitted alternative on one valuable company-specific job before expansion.
+
+The final local build and lint pass succeeded. The rendered English desktop journey and both 390×844 mobile journeys showed no horizontal overflow. English and Swedish retained the language switch, enquiry action and form labels, and every header link resolved to a real section below the sticky navigation. Publication is not included in this round; the public site remains on the earlier version until Yusuf approves the new public deployment.
+
+## Round 16 — make company-trained weights the unmistakable USP
+
+Yusuf supplied a second reading of the two Enterprise LLM documents. It clarified that privacy and provider independence are important benefits, but not the whole proposition. The harder claim—and the reason this could become more than a private-AI consultancy—is that recurring company judgment can be learned from approved decisions, language and examples and encoded in model weights the company controls. The hoped-for result is a lighter specialist model that beats generic AI on selected company work, while the accumulated training, evaluations, memory and applications become difficult for a competitor to copy.
+
+The opening now says **“Own the AI trained for your company.”** It explains the literal service in the next sentence: take an open model, train it on approved company examples, connect it to company tools and run it on controlled hardware or private cloud. The four near-top benefits now include beating generic AI on selected work and keeping a compounding company asset. The model diagram says that the company is encoded in the model, the deployment steps explicitly name fine-tuning, and the long-term vision allows several specialist models for different functions or roles.
+
+The stronger claim remains honest. The page describes outperforming generic AI as the aim and says the first deployment must compare the private model with the best permitted alternative on one real job. It does not promise that a private model wins at general tasks. A new question addresses the strongest strategic objection directly: Microsoft and Google will keep adding company context and privacy controls, so Works Like Us is useful only where company-trained weights, independent deployment and unique software create enough extra value to own.
+
+### Cold-review score after restoring the fine-tuning moat
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.5 | 2.3 | 2.4 | 1.9 | **9.1/10** |
+| Investor | 2.5 | 2.2 | 2.5 | 1.8 | **9.0/10** |
+
+The revised headline, literal service description, company-training mechanism and direct Microsoft/Google objection make the category, USP and strategic risk easier to repeat after one reading. The scores remain internal messaging reviews rather than real customer or investor evidence. Customers still lack delivery proof, a case study and settled commercial terms. Investors still lack customer traction and evidence that the initial Swedish segment is large enough.
+
+The final production build and lint checks succeeded. The revised English desktop hero keeps both actions in the first viewport. At 390×844, the English and Swedish headings, primary action and opening explanation remain legible with a 390-pixel document width and no horizontal overflow. Publication is still a separate step and has not occurred in this round.
+
+## Round 17 — lead with the cost of renting the same intelligence
+
+Yusuf supplied the final concise business thesis: **“Why rent intelligence your competitor also rents?”** The previous version explained ownership and fine-tuning clearly, but it made the visitor assemble the urgency from several later sections. The refined version puts the competitive question first and immediately answers what Works Like Us does: build the company’s own AI model by fine-tuning an open model on approved examples of how the company works, connecting it to tools and operating it in controlled infrastructure.
+
+The three costs of relying only on rented intelligence now appear together immediately after the first viewport: the same general model cannot be a unique advantage by itself; a provider controls a capability the company may depend on; and experienced people can take unwritten institutional judgment with them when they leave. The existing four benefits remain together directly afterward, so the page shows both the risk of doing nothing and what the company gains by acting.
+
+The business moat is now explained as an activity system rather than a vague service-to-platform promise. Works Like Us aims to identify proprietary work, turn measured outcomes into approved training feedback and reuse hosting and operating methods across deployments without mixing customer data or trained models. This is still a business hypothesis, so the page says shared infrastructure use *can* lower cost rather than claiming already-proven economies.
+
+### The evidence supports the direction, with narrower claims than the source summary
+
+The new market-evidence section uses three primary company sources and states what each example does and does not prove:
+
+- Thomson Reuters invested $40 million in a proprietary model built from an open-source foundation. It used less than 10% of Thomson Reuters' legal content, ranked first on one difficult legal benchmark and was competitive on others. The public source does not identify Qwen as the base model, so the page does not repeat that attribution.
+- Kirkland & Ellis set aside $500 million for proprietary AI technology, with 180 technology professionals and input from 250 lawyers. Its public material supports the institutional-knowledge thesis, but not the supplied claim that the system uses on-premise GPUs or fine-tuned open-source models.
+- FIS and Anthropic co-developed a financial-crimes agent around FIS-controlled data and infrastructure. FIS owns the agent while Claude supplies reasoning, making this evidence for the proprietary system layer rather than model independence.
+
+Microsoft and Google both publicly state that enterprise customer content is not used to train shared foundation models without permission. The site now says those privacy promises are real. It distinguishes Works Like Us on model ownership, company-specific training and portability instead of repeating an outdated privacy accusation. Their native AI products did not end investment in proprietary systems, so the original “Microsoft or Google will make this dead” objection is partly answered by the market—but not yet by Works Like Us customer demand.
+
+### Cold-review score after the final refined thesis
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.5 | 2.4 | 2.5 | 1.9 | **9.3/10** |
+| Investor | 2.5 | 2.3 | 2.5 | 2.1 | **9.4/10** |
+
+The customer score is held back by the absence of a Works Like Us delivery, case study, fixed price or demonstrated result. The investor score is held back by the absence of traction, a measured Swedish market and proven hosting economies. The rendered site nevertheless exceeds the requested 8/10 messaging threshold because a cold visitor can now state the category, service, advantage, three risks, business activity system, market evidence, counterargument and next step without relying on the source documents.
+
+The English desktop and English and Swedish 390×844 journeys were checked after the revision. Both mobile pages remained exactly 390 pixels wide with no horizontal overflow. The headline, literal service description and primary action appear in the first mobile viewport after fonts settle; the three-risk sequence and evidence cards collapse to one readable column. The production build, lint and React review found no issue. Yusuf gave standing authorization on 30 August 2026 to publish future verified Works Like Us improvements without asking again.

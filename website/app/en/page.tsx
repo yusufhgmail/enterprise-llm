@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Works Like Us — Your company’s own private AI',
-  description: 'We build, deploy and maintain a private AI model for your company, trained on your business and run inside infrastructure you control.',
+  description: 'We fine-tune and deploy an open AI model around how your company works, so the intelligence becomes a company asset you control.',
   alternates: {
     canonical: '/en',
     languages: { en: '/en', sv: '/se' },
   },
   openGraph: {
     title: 'Works Like Us — Your company’s own private AI',
-    description: 'We build, deploy and maintain a private AI model for your company, trained on your business and run inside infrastructure you control.',
+    description: 'We fine-tune and deploy an open AI model around how your company works, so the intelligence becomes a company asset you control.',
     url: '/en',
     siteName: 'Works Like Us',
     locale: 'en_US',
@@ -20,10 +20,31 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Works Like Us — Your company’s own private AI',
-    description: 'We build, deploy and maintain a private AI model for your company, trained on your business and run inside infrastructure you control.',
+    description: 'We fine-tune and deploy an open AI model around how your company works, so the intelligence becomes a company asset you control.',
     images: ['/og.png'],
   },
 };
+
+const risks = [
+  {
+    number: '01',
+    label: 'NO UNIQUE ADVANTAGE',
+    title: 'The same general intelligence cannot be your advantage.',
+    text: 'If you and a competitor rent the same models and use the same public knowledge, AI raises the baseline for both companies. It does not encode what makes yours better.',
+  },
+  {
+    number: '02',
+    label: 'PLATFORM DEPENDENCE',
+    title: 'A provider can change a capability your business depends on.',
+    text: 'The vendor controls the underlying model, price, policy and access. A useful tool can still become a strategic dependency when the intelligence is not portable.',
+  },
+  {
+    number: '03',
+    label: 'KNOWLEDGE LOSS',
+    title: 'Institutional judgment still walks out the door.',
+    text: 'The reasoning behind good work often lives in experienced people rather than documents. When they leave, that judgment leaves too unless the company deliberately captures and teaches it.',
+  },
+];
 
 const systems = [
   {
@@ -62,6 +83,33 @@ const visionStages = [
   { number: '04', label: 'REPLACE', title: 'Custom AI software', text: 'Generic SaaS gives way where software built for one company creates a real advantage.' },
 ];
 
+const activitySteps = [
+  { number: '01', title: 'Find the work competitors cannot see', text: 'Identify the decisions, examples and unwritten judgment that genuinely make the company different.' },
+  { number: '02', title: 'Turn outcomes into a learning loop', text: 'Capture approved feedback, compare results and train only when the evidence says the model should change.' },
+  { number: '03', title: 'Make private hosting more economical across deployments', text: 'Reuse capacity planning, setup, evaluation and monitoring so higher shared infrastructure use can lower cost while every customer’s data and trained model stay separate.' },
+];
+
+const marketSignals = [
+  {
+    name: 'Thomson Reuters',
+    signal: 'Open foundation + proprietary training',
+    text: 'Thomson Reuters invested $40 million to build and control its own model from an open-source foundation. Trained on less than 10% of its legal content, Thomson ranked first on one difficult legal benchmark and competitively on others.',
+    href: 'https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model',
+  },
+  {
+    name: 'Kirkland & Ellis',
+    signal: '$500m + 180 technology professionals',
+    text: 'Kirkland set aside $500 million for proprietary AI technology. It said 180 technology professionals were building a platform with input from 250 lawyers to deploy the firm’s collective intelligence.',
+    href: 'https://www.kirkland.com/news/in-the-news/2026/05/kirkland-ellis-to-spend-%24500mn-building-its-own-ai-technology',
+  },
+  {
+    name: 'FIS',
+    signal: 'Controlled data + owned agent',
+    text: 'FIS and Anthropic embedded engineers together to build a financial-crimes agent. FIS says its data stays in FIS-controlled infrastructure and it owns the agent, while Claude supplies the reasoning.',
+    href: 'https://fisglobal.gcs-web.com/news-releases/news-release-details/fis-brings-agentic-ai-banking-anthropic-starting-financial',
+  },
+];
+
 export default function EnglishHome() {
   return (
     <main>
@@ -83,8 +131,8 @@ export default function EnglishHome() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Private company AI · In development</p>
-          <h1>Own the AI trained for your company.</h1>
-          <p className="hero-lede">Works Like Us takes an open model, trains it on approved examples of how your company communicates and decides, connects it to your tools and runs it on hardware or private cloud you control. The aim: beat generic AI on selected company work without sending the work—or the intelligence you build—to a public provider.</p>
+          <h1>Why rent intelligence your competitors also rent?</h1>
+          <p className="hero-lede"><strong>Works Like Us builds your company’s own AI model.</strong> We fine-tune an open model on approved examples of how your company works, connect it to your tools and run it on hardware or private cloud you control. The aim is to encode your operating advantage in intelligence your company owns.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">Explore your first private AI system <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#why">See what your company owns <span aria-hidden="true">↓</span></a>
@@ -92,7 +140,7 @@ export default function EnglishHome() {
           <div className="trust-line" aria-label="Our principles">
             <span>Sensitive work stays inside your chosen boundary</span>
             <span>You control the model, memory and workflows</span>
-            <span>Your company’s judgment can live in the model</span>
+            <span>Keep institutional knowledge when people leave</span>
           </div>
         </div>
 
@@ -123,8 +171,8 @@ export default function EnglishHome() {
       </section>
 
       <section className="thesis-band" aria-label="Our point of view">
-        <p>General AI is becoming something every company can buy.</p>
-        <strong>Your advantage begins when the way your company works—its decisions, language and knowledge—is trained into a model you control.</strong>
+        <p>General AI is becoming something every company can rent.</p>
+        <strong>We fine-tune an open model on your processes and decisions so your company’s moat is encoded in intelligence it controls.</strong>
       </section>
 
       <section className="fit-strip" aria-label="Who this is for">
@@ -135,11 +183,28 @@ export default function EnglishHome() {
         <strong>Starting with Swedish companies</strong>
       </section>
 
+      <section className="section risk-section">
+        <div className="section-heading">
+          <p className="eyebrow">The cost of renting all your intelligence</p>
+          <h2>Without company-owned AI, three strategic risks remain.</h2>
+          <p>Public assistants can be excellent tools. The risk is making them the only place your company’s reasoning, accumulated learning and future software live.</p>
+        </div>
+        <div className="risk-path">
+          {risks.map((risk) => (
+            <article key={risk.number}>
+              <div><span>{risk.number}</span><strong>{risk.label}</strong></div>
+              <h3>{risk.title}</h3>
+              <p>{risk.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section work-section" id="value">
         <div className="section-heading">
           <p className="eyebrow">Why companies want their own AI</p>
-          <h2>Use AI on private work, make it better at your company and keep what it learns.</h2>
-          <p>A company-owned model lets people use sensitive knowledge inside an agreed boundary. Training on approved company examples can teach it recurring patterns that do not fit in a policy document or prompt. The first deployment must prove that this improves a real job.</p>
+          <h2>Own the model, make it better at your company and keep what it learns.</h2>
+          <p>A company-owned model can preserve patterns that do not fit in a policy document or prompt: how experienced people judge trade-offs, recognise exceptions and decide what good work looks like. The first deployment must prove that this improves a real job.</p>
         </div>
         <div className="system-cards">
           {systems.map((system) => (
@@ -210,6 +275,14 @@ export default function EnglishHome() {
             <ul><li>You choose the model and where it runs</li><li>Approved data and inference can stay inside your boundary</li><li>Patterns from your decisions and examples can be trained into weights you control</li><li>The company layer can remain when the base model changes</li></ul>
           </article>
         </div>
+        <div className="platform-reality">
+          <span>What Copilot and Gemini already solve</span>
+          <div>
+            <h3>Their enterprise privacy promises are real. Their product is still rented intelligence.</h3>
+            <p>Microsoft and Google state that company prompts and content in their enterprise products are not used to train shared foundation models without permission. That is useful protection. It is different from receiving a company-trained model, the model weights and the freedom to operate that intelligence independently of the platform.</p>
+            <p className="source-links"><a href="https://learn.microsoft.com/copilot/microsoft-365/enterprise-data-protection" target="_blank" rel="noreferrer">Microsoft’s data protection terms ↗</a><a href="https://workspace.google.com/security/ai-privacy/" target="_blank" rel="noreferrer">Google’s AI privacy terms ↗</a></p>
+          </div>
+        </div>
       </section>
 
       <section className="first-system-section">
@@ -239,10 +312,35 @@ export default function EnglishHome() {
             </article>
           ))}
         </div>
-        <div className="business-model-note">
-          <span>How Works Like Us grows</span>
-          <p><strong>Begin with hands-on enterprise deployments.</strong> Turn the repeated work—model setup, training, governance, connectors and maintenance—into a reusable platform. Customer data stays separate; the deployment method gets better.</p>
+        <div className="activity-system">
+          <div className="activity-heading">
+            <span>Why Works Like Us can compound</span>
+            <h3>The customer keeps the intelligence. Our deployment method gets better.</h3>
+            <p>The long-term moat is not access to one base model. It is becoming unusually good at finding proprietary work, teaching it to a model and operating private systems economically.</p>
+          </div>
+          <ol>
+            {activitySteps.map((step) => <li key={step.number}><span>{step.number}</span><div><strong>{step.title}</strong><p>{step.text}</p></div></li>)}
+          </ol>
         </div>
+      </section>
+
+      <section className="section evidence-section">
+        <div className="section-heading">
+          <p className="eyebrow">The market has begun answering the objection</p>
+          <h2>Leading firms are building proprietary AI around the knowledge that makes them different.</h2>
+          <p>These are not Works Like Us customers. They are public examples showing that secure access to a general assistant has not ended demand for company-specific intelligence.</p>
+        </div>
+        <div className="evidence-grid">
+          {marketSignals.map((item) => (
+            <article key={item.name}>
+              <span>{item.signal}</span>
+              <h3>{item.name}</h3>
+              <p>{item.text}</p>
+              <a href={item.href} target="_blank" rel="noreferrer">Read the company source <span aria-hidden="true">↗</span></a>
+            </article>
+          ))}
+        </div>
+        <p className="evidence-limit"><strong>What this does not prove:</strong> none of these examples proves that an open model will outperform a frontier model on every task. They show that institutional knowledge, feedback loops and control of the company-specific system are already strategic investments.</p>
       </section>
 
       <section className="section founder-section">
@@ -258,7 +356,7 @@ export default function EnglishHome() {
         <div className="section-heading"><p className="eyebrow">Common questions</p><h2>What you should know before we start.</h2></div>
         <div className="faq-list">
           <details open><summary>Why not just use ChatGPT, Copilot or another ready-made tool?</summary><p>Use public AI for general work when its terms and controls fit. Build your own when sensitive data must stay inside your boundary, the AI must become meaningfully better at your company, or depending on one provider would put a core capability at risk.</p></details>
-          <details><summary>Won’t Microsoft or Google provide this?</summary><p>They will keep adding company context and stronger privacy controls. Use those products when they solve the job. Works Like Us matters only where your company wants a model trained on its own decisions, deployable under its control and able to become software unique to the company. A first deployment tests whether that difference is valuable enough to own.</p></details>
+          <details><summary>Won’t Microsoft or Google provide this?</summary><p>They already provide useful company context and strong enterprise privacy controls. The market has still moved toward proprietary systems: Thomson Reuters tested a custom model on its data, Kirkland is building firm-owned AI platforms and FIS built an agent it owns around controlled infrastructure. Those examples do not guarantee that every company needs its own model. They show that the Microsoft-or-Google objection no longer ends the case for company-specific intelligence.</p></details>
           <details><summary>Is this software or consulting?</summary><p>It begins as a hands-on service. Works Like Us designs, deploys and maintains the model and first application with your company. Repeated parts of that work can become a product over time.</p></details>
           <details><summary>Do we train a model from scratch?</summary><p>No. We start with an open-weight model, then fine-tune or continue training it only where approved company data and measured results justify the work. Memory and retrieval can handle knowledge that should change without retraining the weights.</p></details>
           <details><summary>Must it run on hardware in our office?</summary><p>No. It can run on company-owned servers or in a private cloud account your company controls. The point is that the core model, company data and learning do not have to depend on a public AI service.</p></details>

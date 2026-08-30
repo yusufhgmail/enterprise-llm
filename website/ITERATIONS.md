@@ -160,3 +160,32 @@ The stronger claim remains honest. The page describes outperforming generic AI a
 The revised headline, literal service description, company-training mechanism and direct Microsoft/Google objection make the category, USP and strategic risk easier to repeat after one reading. The scores remain internal messaging reviews rather than real customer or investor evidence. Customers still lack delivery proof, a case study and settled commercial terms. Investors still lack customer traction and evidence that the initial Swedish segment is large enough.
 
 The final production build and lint checks succeeded. The revised English desktop hero keeps both actions in the first viewport. At 390×844, the English and Swedish headings, primary action and opening explanation remain legible with a 390-pixel document width and no horizontal overflow. Publication is still a separate step and has not occurred in this round.
+
+## Round 17 — lead with the cost of renting the same intelligence
+
+Yusuf supplied the final concise business thesis: **“Why rent intelligence your competitor also rents?”** The previous version explained ownership and fine-tuning clearly, but it made the visitor assemble the urgency from several later sections. The refined version puts the competitive question first and immediately answers what Works Like Us does: build the company’s own AI model by fine-tuning an open model on approved examples of how the company works, connecting it to tools and operating it in controlled infrastructure.
+
+The three costs of relying only on rented intelligence now appear together immediately after the first viewport: the same general model cannot be a unique advantage by itself; a provider controls a capability the company may depend on; and experienced people can take unwritten institutional judgment with them when they leave. The existing four benefits remain together directly afterward, so the page shows both the risk of doing nothing and what the company gains by acting.
+
+The business moat is now explained as an activity system rather than a vague service-to-platform promise. Works Like Us aims to identify proprietary work, turn measured outcomes into approved training feedback and reuse hosting and operating methods across deployments without mixing customer data or trained models. This is still a business hypothesis, so the page says shared infrastructure use *can* lower cost rather than claiming already-proven economies.
+
+### The evidence supports the direction, with narrower claims than the source summary
+
+The new market-evidence section uses three primary company sources and states what each example does and does not prove:
+
+- Thomson Reuters invested $40 million in a proprietary model built from an open-source foundation. It used less than 10% of Thomson Reuters' legal content, ranked first on one difficult legal benchmark and was competitive on others. The public source does not identify Qwen as the base model, so the page does not repeat that attribution.
+- Kirkland & Ellis set aside $500 million for proprietary AI technology, with 180 technology professionals and input from 250 lawyers. Its public material supports the institutional-knowledge thesis, but not the supplied claim that the system uses on-premise GPUs or fine-tuned open-source models.
+- FIS and Anthropic co-developed a financial-crimes agent around FIS-controlled data and infrastructure. FIS owns the agent while Claude supplies reasoning, making this evidence for the proprietary system layer rather than model independence.
+
+Microsoft and Google both publicly state that enterprise customer content is not used to train shared foundation models without permission. The site now says those privacy promises are real. It distinguishes Works Like Us on model ownership, company-specific training and portability instead of repeating an outdated privacy accusation. Their native AI products did not end investment in proprietary systems, so the original “Microsoft or Google will make this dead” objection is partly answered by the market—but not yet by Works Like Us customer demand.
+
+### Cold-review score after the final refined thesis
+
+| Perspective | What it is | Value and benefits | Unique advantage and risk otherwise | Desire and next step | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Customer | 2.5 | 2.4 | 2.5 | 1.9 | **9.3/10** |
+| Investor | 2.5 | 2.3 | 2.5 | 2.1 | **9.4/10** |
+
+The customer score is held back by the absence of a Works Like Us delivery, case study, fixed price or demonstrated result. The investor score is held back by the absence of traction, a measured Swedish market and proven hosting economies. The rendered site nevertheless exceeds the requested 8/10 messaging threshold because a cold visitor can now state the category, service, advantage, three risks, business activity system, market evidence, counterargument and next step without relying on the source documents.
+
+The English desktop and English and Swedish 390×844 journeys were checked after the revision. Both mobile pages remained exactly 390 pixels wide with no horizontal overflow. The headline, literal service description and primary action appear in the first mobile viewport after fonts settle; the three-risk sequence and evidence cards collapse to one readable column. The production build, lint and React review found no issue. Yusuf gave standing authorization on 30 August 2026 to publish future verified Works Like Us improvements without asking again.

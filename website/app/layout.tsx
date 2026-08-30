@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://workslikeus.com'),
   title: 'Works Like Us — Your company’s own private AI',
-  description: 'We build, deploy and maintain private AI models trained for each company and run inside infrastructure the company controls.',
+  description: 'We fine-tune open AI models around how each company works, so the intelligence becomes a company asset it controls.',
   icons: {
     icon: '/favicon.svg',
   },

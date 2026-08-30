@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Works Like Us — Ert företags egen privata AI',
-  description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
+  description: 'Vi finjusterar och driftsätter en öppen AI-modell kring hur ert företag arbetar, så att intelligensen blir en företagstillgång ni kontrollerar.',
   alternates: {
     canonical: '/se',
     languages: { en: '/en', sv: '/se' },
   },
   openGraph: {
     title: 'Works Like Us — Ert företags egen privata AI',
-    description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
+    description: 'Vi finjusterar och driftsätter en öppen AI-modell kring hur ert företag arbetar, så att intelligensen blir en företagstillgång ni kontrollerar.',
     url: '/se',
     siteName: 'Works Like Us',
     locale: 'sv_SE',
@@ -20,10 +20,31 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Works Like Us — Ert företags egen privata AI',
-    description: 'Vi bygger, driftsätter och underhåller en privat AI-modell för ert företag, tränad på er verksamhet och körd i infrastruktur ni kontrollerar.',
+    description: 'Vi finjusterar och driftsätter en öppen AI-modell kring hur ert företag arbetar, så att intelligensen blir en företagstillgång ni kontrollerar.',
     images: ['/og.png'],
   },
 };
+
+const risks = [
+  {
+    number: '01',
+    label: 'INGEN UNIK FÖRDEL',
+    title: 'Samma allmänna intelligens kan inte vara er fördel.',
+    text: 'Om ni och en konkurrent hyr samma modeller och använder samma publika kunskap höjer AI grundnivån för båda. Den bygger inte in det som gör ert företag bättre.',
+  },
+  {
+    number: '02',
+    label: 'PLATTFORMSBEROENDE',
+    title: 'En leverantör kan ändra en förmåga verksamheten är beroende av.',
+    text: 'Leverantören styr grundmodellen, priset, reglerna och tillgången. Ett bra verktyg kan ändå bli ett strategiskt beroende när intelligensen inte går att flytta.',
+  },
+  {
+    number: '03',
+    label: 'KUNSKAPSFÖRLUST',
+    title: 'Institutionellt omdöme går fortfarande ut genom dörren.',
+    text: 'Resonemanget bakom bra arbete finns ofta hos erfarna människor, inte i dokument. När de slutar försvinner omdömet om företaget inte medvetet fångar och lär ut det.',
+  },
+];
 
 const systems = [
   {
@@ -62,6 +83,33 @@ const visionStages = [
   { number: '04', label: 'ERSÄTT', title: 'Skräddarsydd AI-mjukvara', text: 'Generisk SaaS ersätts där mjukvara byggd för ett företag skapar en verklig fördel.' },
 ];
 
+const activitySteps = [
+  { number: '01', title: 'Hitta arbetet konkurrenterna inte kan se', text: 'Identifiera besluten, exemplen och det outtalade omdömet som verkligen gör företaget annorlunda.' },
+  { number: '02', title: 'Gör resultat till en lärloop', text: 'Fånga godkänd återkoppling, jämför resultat och träna bara när bevisen säger att modellen bör förändras.' },
+  { number: '03', title: 'Gör privat drift mer ekonomisk mellan driftsättningar', text: 'Återanvänd kapacitetsplanering, installation, utvärdering och övervakning så att högre gemensamt infrastrukturutnyttjande kan sänka kostnaden medan varje kunds data och tränade modell hålls åtskilda.' },
+];
+
+const marketSignals = [
+  {
+    name: 'Thomson Reuters',
+    signal: 'Öppen grund + unik träning',
+    text: 'Thomson Reuters investerade 40 miljoner dollar för att bygga och kontrollera en egen modell från en öppen grund. Tränad på mindre än 10 procent av företagets juridiska innehåll kom Thomson först i ett svårt juridiskt test och var konkurrenskraftig i andra.',
+    href: 'https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model',
+  },
+  {
+    name: 'Kirkland & Ellis',
+    signal: '500 miljoner dollar + 180 teknikspecialister',
+    text: 'Kirkland avsatte 500 miljoner dollar för egen AI-teknik. Bolaget uppgav att 180 teknikspecialister byggde en plattform med kunskap från 250 jurister för att sprida firmans samlade intelligens.',
+    href: 'https://www.kirkland.com/news/in-the-news/2026/05/kirkland-ellis-to-spend-%24500mn-building-its-own-ai-technology',
+  },
+  {
+    name: 'FIS',
+    signal: 'Kontrollerad data + egen agent',
+    text: 'FIS och Anthropic satte in ingenjörer tillsammans för att bygga en agent för finansiell brottslighet. FIS säger att datan stannar i infrastruktur bolaget kontrollerar och att FIS äger agenten, medan Claude står för resonemanget.',
+    href: 'https://fisglobal.gcs-web.com/news-releases/news-release-details/fis-brings-agentic-ai-banking-anthropic-starting-financial',
+  },
+];
+
 export default function SwedishHome() {
   return (
     <main lang="sv">
@@ -79,14 +127,14 @@ export default function SwedishHome() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Privat företags-AI · Under utveckling</p>
-          <h1>Äg AI:n som tränats för ert företag.</h1>
-          <p className="hero-lede">Works Like Us tar en öppen modell, tränar den på godkända exempel på hur ert företag kommunicerar och fattar beslut, kopplar den till era verktyg och kör den på hårdvara eller i ett privat moln ni kontrollerar. Målet är att slå generisk AI i utvalda företagsuppgifter utan att skicka arbetet – eller den intelligens ni bygger – till en publik leverantör.</p>
+          <h1>Varför hyra intelligens som era konkurrenter också hyr?</h1>
+          <p className="hero-lede"><strong>Works Like Us bygger ert företags egen AI-modell.</strong> Vi finjusterar en öppen modell på godkända exempel på hur ert företag arbetar, kopplar den till era verktyg och kör den på hårdvara eller i ett privat moln ni kontrollerar. Målet är att bygga in er verksamhetsfördel i intelligens företaget äger.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">Utforska ert första privata AI-system <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="#why">Se vad ert företag äger <span aria-hidden="true">↓</span></a>
           </div>
           <div className="trust-line" aria-label="Våra principer">
-            <span>Känsligt arbete stannar inom den gräns ni väljer</span><span>Ni kontrollerar modellen, minnet och arbetsflödena</span><span>Ert företags omdöme kan finnas i modellen</span>
+            <span>Känsligt arbete stannar inom den gräns ni väljer</span><span>Ni kontrollerar modellen, minnet och arbetsflödena</span><span>Behåll verksamhetskunskap när människor slutar</span>
           </div>
         </div>
 
@@ -102,18 +150,35 @@ export default function SwedishHome() {
       </section>
 
       <section className="thesis-band" aria-label="Vår utgångspunkt">
-        <p>Allmän AI blir något alla företag kan köpa.</p>
-        <strong>Er fördel börjar när sättet ert företag arbetar på – besluten, språket och kunskapen – tränas in i en modell ni kontrollerar.</strong>
+        <p>Allmän AI blir något alla företag kan hyra.</p>
+        <strong>Vi finjusterar en öppen modell på era processer och beslut så att företagets vallgrav byggs in i intelligens ni kontrollerar.</strong>
       </section>
 
       <section className="fit-strip" aria-label="Vilka företag det passar bäst">
         <span>Passar bäst</span><strong>Minst 100 anställda</strong><strong>Publik AI är begränsad</strong><strong>Känsligt eller unikt arbete</strong><strong>Börjar med svenska företag</strong>
       </section>
 
+      <section className="section risk-section">
+        <div className="section-heading">
+          <p className="eyebrow">Kostnaden för att hyra all intelligens</p>
+          <h2>Utan företagsägd AI återstår tre strategiska risker.</h2>
+          <p>Publika assistenter kan vara utmärkta verktyg. Risken är att göra dem till den enda platsen där företagets resonemang, samlade lärande och framtida mjukvara finns.</p>
+        </div>
+        <div className="risk-path">
+          {risks.map((risk) => (
+            <article key={risk.number}>
+              <div><span>{risk.number}</span><strong>{risk.label}</strong></div>
+              <h3>{risk.title}</h3>
+              <p>{risk.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section work-section" id="value">
         <div className="section-heading">
-          <p className="eyebrow">Varför företag vill ha en egen AI</p><h2>Använd AI i privat arbete, gör den bättre på ert företag och behåll det den lär sig.</h2>
-          <p>En företagsägd modell låter människor använda känslig kunskap inom en bestämd gräns. Träning på godkända företagsexempel kan lära den återkommande mönster som inte ryms i ett styrdokument eller en prompt. Den första driftsättningen måste visa att detta förbättrar ett verkligt arbete.</p>
+          <p className="eyebrow">Varför företag vill ha en egen AI</p><h2>Äg modellen, gör den bättre på ert företag och behåll det den lär sig.</h2>
+          <p>En företagsägd modell kan bevara mönster som inte ryms i ett styrdokument eller en prompt: hur erfarna människor väger av alternativ, känner igen undantag och avgör vad bra arbete är. Den första driftsättningen måste visa att detta förbättrar ett verkligt arbete.</p>
         </div>
         <div className="system-cards">{systems.map((system) => <article className="system-card" key={system.number}><span>{system.number}</span><h3>{system.title}</h3><p>{system.text}</p></article>)}</div>
         <div className="stack-line"><span>Koppla verktygen ni redan använder</span><strong>Microsoft 365</strong><strong>Google Workspace</strong><strong>HubSpot</strong><strong>Salesforce</strong><strong>Era egna system</strong></div>
@@ -157,6 +222,14 @@ export default function SwedishHome() {
           <article><span>Hyr publik AI</span><h3>Leverantören styr intelligensen ni blir beroende av.</h3><ul><li>Leverantören väljer modell, pris och tillgång</li><li>Känslig kontext kan passera er valda gräns</li><li>Konkurrenterna kan hyra samma allmänna förmåga</li><li>Ett leverantörsbyte kan kräva att företagslagret byggs om</li></ul></article>
           <article className="owned-column"><span>Äg företagets AI</span><h3>Ert företag styr intelligensen det skapar.</h3><ul><li>Ni väljer modellen och var den körs</li><li>Godkänd data och modellkörning kan stanna inom er gräns</li><li>Mönster från era beslut och exempel kan tränas in i vikter ni kontrollerar</li><li>Företagslagret kan bestå när grundmodellen byts</li></ul></article>
         </div>
+        <div className="platform-reality">
+          <span>Det Copilot och Gemini redan löser</span>
+          <div>
+            <h3>Deras integritetslöften för företag är verkliga. Produkten är fortfarande hyrd intelligens.</h3>
+            <p>Microsoft och Google uppger att företagets prompter och innehåll i deras företagsprodukter inte används för att träna gemensamma grundmodeller utan tillstånd. Det är ett viktigt skydd. Det är inte samma sak som att få en företagstränad modell, modellens vikter och friheten att köra intelligensen oberoende av plattformen.</p>
+            <p className="source-links"><a href="https://learn.microsoft.com/copilot/microsoft-365/enterprise-data-protection" target="_blank" rel="noreferrer">Microsofts villkor för dataskydd ↗</a><a href="https://workspace.google.com/security/ai-privacy/" target="_blank" rel="noreferrer">Googles villkor för AI-integritet ↗</a></p>
+          </div>
+        </div>
       </section>
 
       <section className="first-system-section">
@@ -179,10 +252,35 @@ export default function SwedishHome() {
             </article>
           ))}
         </div>
-        <div className="business-model-note">
-          <span>Så växer Works Like Us</span>
-          <p><strong>Börja med praktiska företagsdriftsättningar.</strong> Gör det återkommande arbetet – modellinstallation, träning, styrning, kopplingar och underhåll – till en återanvändbar plattform. Kunddata hålls åtskild; driftsättningsmetoden blir bättre.</p>
+        <div className="activity-system">
+          <div className="activity-heading">
+            <span>Varför Works Like Us kan bli starkare</span>
+            <h3>Kunden behåller intelligensen. Vår driftsättningsmetod blir bättre.</h3>
+            <p>Den långsiktiga vallgraven är inte tillgång till en grundmodell. Den är att bli ovanligt bra på att hitta unikt arbete, lära modellen det och driva privata system ekonomiskt.</p>
+          </div>
+          <ol>
+            {activitySteps.map((step) => <li key={step.number}><span>{step.number}</span><div><strong>{step.title}</strong><p>{step.text}</p></div></li>)}
+          </ol>
         </div>
+      </section>
+
+      <section className="section evidence-section">
+        <div className="section-heading">
+          <p className="eyebrow">Marknaden har börjat besvara invändningen</p>
+          <h2>Ledande företag bygger egen AI kring kunskapen som gör dem annorlunda.</h2>
+          <p>Det här är inte kunder till Works Like Us. Det är offentliga exempel som visar att säker åtkomst till en allmän assistent inte har tagit bort behovet av företagsspecifik intelligens.</p>
+        </div>
+        <div className="evidence-grid">
+          {marketSignals.map((item) => (
+            <article key={item.name}>
+              <span>{item.signal}</span>
+              <h3>{item.name}</h3>
+              <p>{item.text}</p>
+              <a href={item.href} target="_blank" rel="noreferrer">Läs företagets egen källa <span aria-hidden="true">↗</span></a>
+            </article>
+          ))}
+        </div>
+        <p className="evidence-limit"><strong>Det här bevisar inte:</strong> inget av exemplen visar att en öppen modell slår en frontiermodell i varje uppgift. De visar att institutionell kunskap, återkopplingsloopar och kontroll över det företagsspecifika systemet redan är strategiska investeringar.</p>
       </section>
 
       <section className="section founder-section">
@@ -195,7 +293,7 @@ export default function SwedishHome() {
         <div className="section-heading"><p className="eyebrow">Vanliga frågor</p><h2>Det här bör ni veta innan vi börjar.</h2></div>
         <div className="faq-list">
           <details open><summary>Varför inte bara använda ChatGPT, Copilot eller ett annat färdigt verktyg?</summary><p>Använd publik AI för allmänt arbete när villkoren och kontrollerna passar. Bygg en egen när känslig data måste stanna inom er gräns, AI:n måste bli tydligt bättre på ert företag eller ett beroende av en leverantör skulle utsätta en central förmåga för risk.</p></details>
-          <details><summary>Kommer inte Microsoft eller Google att erbjuda det här?</summary><p>De kommer att fortsätta lägga till företagskontext och starkare integritetskontroller. Använd deras produkter när de löser arbetet. Works Like Us behövs bara där ert företag vill ha en modell tränad på sina egna beslut, driftsatt under egen kontroll och kapabel att bli mjukvara som är unik för företaget. Den första driftsättningen testar om den skillnaden är värd att äga.</p></details>
+          <details><summary>Kommer inte Microsoft eller Google att erbjuda det här?</summary><p>De erbjuder redan användbar företagskontext och starka integritetskontroller. Marknaden har ändå rört sig mot egna system: Thomson Reuters testade en egen modell på sin data, Kirkland bygger AI-plattformar som bolaget äger och FIS byggde en egen agent kring kontrollerad infrastruktur. Exemplen betyder inte att varje företag behöver en egen modell. De visar att Microsoft-eller-Google-invändningen inte längre avslutar argumentet för företagsspecifik intelligens.</p></details>
           <details><summary>Är det här mjukvara eller konsultarbete?</summary><p>Det börjar som en praktisk tjänst. Works Like Us utformar, driftsätter och underhåller modellen och den första applikationen tillsammans med ert företag. Återkommande delar av arbetet kan bli en produkt över tid.</p></details>
           <details><summary>Tränar vi en modell från grunden?</summary><p>Nej. Vi börjar med en modell med öppna vikter och finjusterar eller fortsätter träna den bara där godkänd företagsdata och mätbara resultat motiverar arbetet. Minne och sökning kan hantera kunskap som ska kunna ändras utan ny träning av vikterna.</p></details>
           <details><summary>Måste den köras på hårdvara på kontoret?</summary><p>Nej. Den kan köras på företagets egna servrar eller i ett privat molnkonto som företaget kontrollerar. Poängen är att kärnmodellen, företagsdatan och lärandet inte behöver vara beroende av en publik AI-tjänst.</p></details>

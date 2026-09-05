@@ -36,6 +36,16 @@ Combining them into one company would create a generic "sovereign AI consultancy
 2. **Deploying fine-tuning + feedback loops** - We become better at deploying systems that host, fine-tune, and create feedback loops that improve LLMs continuously.
 3. **Hosting economics** - The more customers we have, the more cost-effective we become at hosting custom open source LLMs and training them.
 
+## Alternative Expansion Roadmap Retained From NomosLayer
+
+NomosLayer described a broader company-owned AI layer around the model. Its most important argument is that AI chat is becoming part of company management whether leadership chooses it or not. Employees ask public models how to think, write, decide, prioritize, sell, support customers and interpret strategy. If the company leaves that layer inside a public AI product, an outside provider's context, defaults, policies and product decisions gain material influence over how the company operates, while leadership cannot fully control or carry that accumulated layer elsewhere.
+
+A company-owned AI layer turns that power toward the company's own direction. It can make the company's strategy, standards, policies, knowledge and best practices present in thousands of everyday decisions. Leadership can update the layer once and change the guidance employees receive throughout the company.
+
+This is retained as an alternative expansion roadmap for Works Like Us, not as a replacement for the current focused offer. Works Like Us currently begins by identifying proprietary work, fine-tuning an open model on approved company examples, deploying it in controlled infrastructure and building a feedback loop. The NomosLayer path would expand that foundation into company-owned memory, context, permissions, policies, tools, workflows, logs, evaluations and model routing, with models treated as replaceable parts of the system.
+
+The preserved source documents and a guide to their current relevance are in [docs/alternative-roadmaps/nomoslayer](docs/alternative-roadmaps/nomoslayer/README.md).
+
 ## Shared Philosophy
 
 All three share one thesis: companies should own their AI, their software, and their data. They should not depend on third-party providers who can revoke access, raise prices, or use their data to compete with them. This philosophy lives at the holding company level (Yusuf Young AB).

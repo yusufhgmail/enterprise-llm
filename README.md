@@ -1,6 +1,8 @@
 # Enterprise LLM
 
 > The current website source of truth is [WEBSITE_BRIEF.md](WEBSITE_BRIEF.md). The material below is the original concept record and contains exploratory market, pricing and implementation hypotheses that are not verified facts.
+>
+> The broader company-owned AI-layer thesis from the archived NomosLayer project is preserved as an [alternative expansion roadmap](docs/alternative-roadmaps/nomoslayer/README.md).
 
 **Created:** 2026-08-22 by Yusuf Young
 **Status:** Concept stage. Building vision websites next.

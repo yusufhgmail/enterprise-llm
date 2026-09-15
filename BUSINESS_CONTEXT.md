@@ -46,6 +46,24 @@ This is retained as an alternative expansion roadmap for Works Like Us, not as a
 
 The preserved source documents and a guide to their current relevance are in [docs/alternative-roadmaps/nomoslayer](docs/alternative-roadmaps/nomoslayer/README.md).
 
+## Aether Workforce Branch (Proposed)
+
+**Have your own sovereign AI workforce. Don't outsource your company's unique advantage.**
+
+Aether proposes a workforce branch of the Enterprise LLM vision. The full [Aether Company Release Plan](https://github.com/yusufhgmail/aether/blob/main/docs/COMPANY-RELEASE-PLAN.md) lives in the Aether project:
+
+1. Release a usable Aether Community Edition.
+2. Build multiple collaborating specialist Aether employees for companies through consulting.
+3. Build a management layer that coordinates those employees and makes their work, responsibilities, and collaboration visible to humans.
+4. Long term, train company-specific specialist LLMs for better task performance, lower cost, better collaboration, and clearer division of responsibility.
+5. Build a system that autonomously decides which specialists to train and how to train and improve them.
+
+The service starts with specialization through roles, knowledge, tools, and workflows. Company-trained weights come later. Aether supplies the workforce and coordination; Works Like Us's training and feedback methods could supply the specialist models. Better performance and lower cost remain goals to test on company work. GrokBot is the competitor Yusuf identified for comparison.
+
+This is a proposed expansion path alongside the existing company-model offer. Commercial ownership, branding, and packaging remain open.
+
+_<<--[CODEX] 2026-09-15: Added Yusuf's Aether workforce direction as a summary and cross-project link. The full release plan is maintained in Aether.>>_
+
 ## Shared Philosophy
 
 All three share one thesis: companies should own their AI, their software, and their data. They should not depend on third-party providers who can revoke access, raise prices, or use their data to compete with them. This philosophy lives at the holding company level (Yusuf Young AB).

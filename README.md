@@ -9,13 +9,15 @@
 
 ## Aether Workforce Branch
 
-Aether's [Company Release Plan](https://github.com/yusufhgmail/aether/blob/main/docs/COMPANY-RELEASE-PLAN.md) proposes a workforce branch of Enterprise LLM: release Aether, build collaborating specialist employees through consulting, then build their management layer. Long term, train company-specific specialist models and automate decisions about specialist training.
+Aether's [Company Release Plan (published September 15, 2026 snapshot)](https://github.com/yusufhgmail/aether/blob/94e025eafebe16f5d18bc2db6bed744923ecbeee/docs/COMPANY-RELEASE-PLAN.md) proposes a workforce branch of Enterprise LLM: release Aether, build collaborating specialist employees through consulting, then build their management layer. Long term, train company-specific specialist models and automate decisions about specialist training.
 
 **Positioning:** Have your own sovereign AI workforce. Don't outsource your company's unique advantage.
 
-See the [business-context summary](BUSINESS_CONTEXT.md#aether-workforce-branch-proposed) for the relationship to Works Like Us. The full plan lives in Aether; commercial packaging remains open.
+See the [business-context summary](BUSINESS_CONTEXT.md#aether-workforce-branch-proposed) for the relationship to Works Like Us. The current working plan lives in the owner's strategic-directions collection; commercial packaging remains open.
 
 _<<--[CODEX] 2026-09-15: Linked and summarized the Aether workforce plan as a proposed Enterprise LLM branch.>>_
+
+_<<--[CODEX] 2026-09-28: Updated the public reference to the published snapshot after the working plan moved to the owner's strategic-directions collection.>>_
 
 ## The Idea
 

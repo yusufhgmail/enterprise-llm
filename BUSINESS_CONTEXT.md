@@ -50,7 +50,7 @@ The preserved source documents and a guide to their current relevance are in [do
 
 **Have your own sovereign AI workforce. Don't outsource your company's unique advantage.**
 
-Aether proposes a workforce branch of the Enterprise LLM vision. The full [Aether Company Release Plan](https://github.com/yusufhgmail/aether/blob/main/docs/COMPANY-RELEASE-PLAN.md) lives in the Aether project:
+Aether proposes a workforce branch of the Enterprise LLM vision. The [Aether Company Release Plan (published September 15, 2026 snapshot)](https://github.com/yusufhgmail/aether/blob/94e025eafebe16f5d18bc2db6bed744923ecbeee/docs/COMPANY-RELEASE-PLAN.md) records the sequence below:
 
 1. Release a usable Aether Community Edition.
 2. Build multiple collaborating specialist Aether employees for companies through consulting.
@@ -60,9 +60,11 @@ Aether proposes a workforce branch of the Enterprise LLM vision. The full [Aethe
 
 The service starts with specialization through roles, knowledge, tools, and workflows. Company-trained weights come later. Aether supplies the workforce and coordination; Works Like Us's training and feedback methods could supply the specialist models. Better performance and lower cost remain goals to test on company work. GrokBot is the competitor Yusuf identified for comparison.
 
-This is a proposed expansion path alongside the existing company-model offer. Commercial ownership, branding, and packaging remain open.
+This is a proposed expansion path alongside the existing company-model offer. Commercial ownership, branding, and packaging remain open. The current working plan lives in the owner's strategic-directions collection.
 
 _<<--[CODEX] 2026-09-15: Added Yusuf's Aether workforce direction as a summary and cross-project link. The full release plan is maintained in Aether.>>_
+
+_<<--[CODEX] 2026-09-28: Updated the public reference to the published snapshot after the working plan moved to the owner's strategic-directions collection.>>_
 
 ## Shared Philosophy
 
